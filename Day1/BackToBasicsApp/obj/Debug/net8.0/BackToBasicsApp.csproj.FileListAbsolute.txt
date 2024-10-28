@@ -1,0 +1,14 @@
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\bin\Debug\net8.0\BackToBasicsApp.exe
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\bin\Debug\net8.0\BackToBasicsApp.deps.json
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\bin\Debug\net8.0\BackToBasicsApp.runtimeconfig.json
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\bin\Debug\net8.0\BackToBasicsApp.dll
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\bin\Debug\net8.0\BackToBasicsApp.pdb
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\BackToBasicsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\BackToBasicsApp.AssemblyInfoInputs.cache
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\BackToBasicsApp.AssemblyInfo.cs
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\BackToBasicsApp.csproj.CoreCompileInputs.cache
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\BackToBasicsApp.dll
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\refint\BackToBasicsApp.dll
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\BackToBasicsApp.pdb
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\BackToBasicsApp.genruntimeconfig.cache
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\ref\BackToBasicsApp.dll
