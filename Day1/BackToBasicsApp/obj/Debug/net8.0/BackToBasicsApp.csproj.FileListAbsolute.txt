@@ -12,3 +12,4 @@ C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\refint\BackTo
 C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\BackToBasicsApp.pdb
 C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\BackToBasicsApp.genruntimeconfig.cache
 C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\ref\BackToBasicsApp.dll
+C:\Corp\Velveer\Participants\Day1\BackToBasicsApp\obj\Debug\net8.0\BackToBasicsApp.sourcelink.json
