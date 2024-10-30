@@ -1,14 +1,11 @@
 ﻿using BackToBasicsApp.Exceptions;
+using BackToBasicsApp.Interfaces;
 using BackToBasicsApp.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BackToBasicsApp.Repositories
 {
-    public class ProductRepository
+    public class ProductRepository : IRepository<int, Product>
     {
         Dictionary<int, Product> products = new Dictionary<int, Product>()
         {
@@ -28,6 +25,42 @@ namespace BackToBasicsApp.Repositories
                 throw new ProductAlreadyExistsException();
             products.Add(product.Id, product);
             return product;
+        }
+
+        public Product Delete(int key)
+        {
+            var product = Get(key);
+            if (product != null)
+            {
+                products.Remove(key);
+                return product;
+            }
+            throw new EntityNotFoundException("Product");
+        }
+
+        public Product Get(int key)
+        {
+            if (products.ContainsKey(key))
+                return products[key];
+            throw new EntityNotFoundException("Product");
+        }
+
+        public IEnumerable<Product> GetAll()
+        {
+            if (products.Count == 0)
+                throw new CollectionEmptyException("Product");
+            return products.Values;
+        }
+
+        public Product Update(int key, Product item)
+        {
+            var product = Get(key);
+            if (product != null)
+            {
+                products[key] = item;
+                return item;
+            }
+            throw new EntityNotFoundException("Product");
         }
     }
 }

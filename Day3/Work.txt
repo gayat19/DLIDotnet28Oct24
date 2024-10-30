@@ -1,0 +1,297 @@
+https://refactoring.guru/design-patterns/csharp
+
+https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
+
+
+Database concepts
+RDBMS - SQL Server
+Entity - Table - Collection of Rows- Collection of columns(Attribute) - Column contains data
+Entity - Strong - has PK- Attribute or collection of attributes used to identify every row(Tuple) uniquely/Weak 
+Attribute - 
+    Simple - One unit of data(Area, Description, Quantity)
+    Multi-Value- more than one unit of that cannot be split into multiple attributes logically(Skills, Phones)
+    Complex - more than one unit of that can be split into multiple attributes logically(Address)
+    Derived - gets values from another attribute(Age from DOB)
+
+
+1NF - Should have PK, No Multi Value attribute, All values of an attribute should contain similar type of data
+2NF - Should be in 1NF, If you have composite key, then ensure there is no partial dependency
+3NF - Should be in 2NF, No transitive dependency
+-------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BackToBasicsApp.Interfaces
+{
+    public interface IRepository<K,T> where T : class
+    {
+        public T Add(T item);
+        public T Update(K key,T item);
+        public T Delete(K key);
+        public T Get(K key);
+        public IEnumerable<T> GetAll();
+    }
+}
+-------------------------------
+namespace BackToBasicsApp.Exceptions
+{
+
+    public class CollectionEmptyException : Exception
+    {
+        readonly string _message;
+        public CollectionEmptyException()
+        {
+            _message = "There are no entries";
+        }
+        public CollectionEmptyException(string entity)
+        {
+            _message = $"There are no  {entity} ";
+        }
+        public override string Message => _message;
+    }
+}
+-----------------------------------------------
+namespace BackToBasicsApp.Exceptions
+{
+
+    public class EntityNotFoundException : Exception
+    {
+        readonly string _message;
+        public EntityNotFoundException()
+        {
+            _message = "No such entity";
+        }
+        public EntityNotFoundException(string entity)
+        {
+            _message = $"The {entity} is not found";
+        }
+        public override string Message => _message;
+    }
+}
+------------------------------
+using BackToBasicsApp.Exceptions;
+using BackToBasicsApp.Interfaces;
+using BackToBasicsApp.Models;
+
+
+namespace BackToBasicsApp.Repositories
+{
+    public class ProductRepository : IRepository<int, Product>
+    {
+        Dictionary<int, Product> products = new Dictionary<int, Product>()
+        {
+            {101, new Product() { Id = 101, Name = "Pencil", Price = 5, Quantity = 10, BasicImgae = "" } },
+            {102, new Product() { Id = 102, Name = "Eraser", Price = 3, Quantity = 7, BasicImgae = "" } },
+            {103, new Product() { Id = 103, Name = "Pencil", Price = 5, Quantity = 10, BasicImgae = "" } }
+        };
+        /// <summary>
+        /// Method to add a new product to the Dictionary
+        /// </summary>
+        /// <param name="product">A non nullable Product object that is populated</param>
+        /// <returns></returns>
+        /// <exception cref="ProductAlreadyExistsException"></exception>
+        public Product Add(Product product) 
+        {
+            if (products.ContainsValue(product))
+                throw new ProductAlreadyExistsException();
+            products.Add(product.Id, product);
+            return product;
+        }
+
+        public Product Delete(int key)
+        {
+            var product = Get(key);
+            if (product != null)
+            {
+                products.Remove(key);
+                return product;
+            }
+            throw new EntityNotFoundException("Product");
+        }
+
+        public Product Get(int key)
+        {
+            if (products.ContainsKey(key))
+                return products[key];
+            throw new EntityNotFoundException("Product");
+        }
+
+        public IEnumerable<Product> GetAll()
+        {
+            if (products.Count == 0)
+                throw new CollectionEmptyException("Product");
+            return products.Values;
+        }
+
+        public Product Update(int key, Product item)
+        {
+            var product = Get(key);
+            if (product != null)
+            {
+                products[key] = item;
+                return item;
+            }
+            throw new EntityNotFoundException("Product");
+        }
+    }
+}
+-------------------------------------------------------
+using BackToBasicsApp.Exceptions;
+using BackToBasicsApp.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BackToBasicsApp.Repositories
+{
+    public abstract class Repositories<K, T> : IRepository<K, T> where T : class
+    {
+        IList<T> list;
+        //public Repositories()
+        //{
+        //    list = new List<T>();
+        //}
+        protected Repositories(IList<T> givenList)
+        {
+            list = givenList;
+        }
+        public T Add(T item)
+        {
+            list.Add(item);
+            return item;
+        }
+
+        public T Delete(K key)
+        {
+            T item = Get(key);
+            if(item != null)
+            {
+                list.Remove(item);
+                return item;
+            }
+            throw new EntityNotFoundException();
+        }
+
+        public abstract T Get(K key);
+    
+
+        public IEnumerable<T> GetAll()
+        {
+            if(list.Count == 0)
+                throw new CollectionEmptyException();
+            return list;
+        }
+
+        public T Update(K key, T item)
+        {
+            T oldItem = Get(key);
+            if (item != null)
+            {
+                list.Remove(oldItem);
+                list.Add(item);
+                return item;
+            }
+            throw new EntityNotFoundException();
+        }
+    }
+}
+---------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BackToBasicsApp.Models
+{
+    public class Customer : IEquatable<Customer>, IComparable<Customer>
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public decimal Phone { get; set; }
+        public string Email { get; set; } = string.Empty;
+
+        public int CompareTo(Customer? other)
+        {
+            var customer = other ?? new Customer();
+            return customer.Name.CompareTo(this.Name);
+        }
+
+        public bool Equals(Customer? other)
+        {
+            var customer = other ?? new Customer();
+            return customer.Id.Equals(this.Id);
+        }
+        public override string ToString()
+        {
+            return $"Id {Id}\tName {Name}\tPhone {Phone}\tEmail {Email}";
+        }
+    }
+}
+----------------------------------------------------------------------------
+using BackToBasicsApp.Exceptions;
+using BackToBasicsApp.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BackToBasicsApp.Repositories
+{
+    public class CustomerRepository : Repositories<int, Customer>
+    {
+        static IList<Customer> _customers = new List<Customer>();
+        public CustomerRepository() :base(_customers)
+        {
+            
+        }
+        public override Customer Get(int key)
+        {
+            var customer = _customers.FirstOrDefault(c=>c.Id == key);
+            if (customer == null)
+                throw new EntityNotFoundException("Customer");
+            return customer;
+        }
+    }
+}
+----------------------------------------------------------------------------
+////int num1 = 0;
+////num1 = null;//Not possible because int is primitive value type
+//int? num1 =10;
+////num1 = null;//possible because its a nullable type
+
+//int num2 = (num1??0) + 100;//num1 is null it will take 0 as the value- we have acheived this usinga  null collasing operator
+//Console.WriteLine($"The value of num2 is {num2}");//interpllation- feature of C#8 and above
+
+using BackToBasicsApp.Interfaces;
+using BackToBasicsApp.Models;
+using BackToBasicsApp.Repositories;
+
+//Product product = new Product() { Id = 101, Name = "Pencil", Price = 5, Quantity = 10, BasicImgae = "" };
+//Media pencilMedia = new UpdatedMedia { Id = 1, ProductId = 101, MediaType = ProductMediaType.Video };
+////Console.WriteLine(product);
+////Console.WriteLine(pencilMedia);
+//ProductRepository repository = new ProductRepository();
+//try
+//{
+//    repository.Add(product);
+//}
+//catch (Exception e)
+//{
+//    Console.WriteLine(product+" - "+e.Message);
+//}
+
+IRepository<int,Customer> customerRepository = new CustomerRepository();
+customerRepository.Add(new Customer { Id = 1, Name = "ramu", Phone = 1234567890, Email = "ramu@gmail.com" });
+customerRepository.Add(new Customer { Id = 2, Name = "somu", Phone = 9876543210, Email = "somu@gmail.com" });
+Console.WriteLine(customerRepository.Get(2));
+customerRepository.Update(2, new Customer { Id = 2, Name = "bimu", Phone = 9876543210, Email = "bimu@gmail.com" });
+var customers = customerRepository.GetAll();
+foreach (var customer in customers)
+    Console.WriteLine(customer);
