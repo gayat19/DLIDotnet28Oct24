@@ -1,0 +1,141 @@
+select * from Orders
+
+--Print the customer name and then fetch all the orders of the customer
+
+--declaration
+declare @customerId nvarchar(10), @companyname varchar(100)
+
+declare cur_CustomerData cursor for
+select CustomerId, CompanyName from customers
+--open 
+open cur_CustomerData
+
+--exection
+Fetch next from cur_CustomerData
+into @customerId,@companyName
+--working
+while @@FETCH_STATUS =0
+begin
+   print 'Customer Id : '+@customerId
+   print 'Customer Name : '+@companyname
+   print '------------------------'
+
+   declare @OrderId varchar(5),@shipName varchar(100)
+
+   declare cur_OrderData cursor for
+   select OrderId,ShipName from orders where CustomerID = @customerId
+
+   open cur_OrderData
+
+   fetch next from cur_OrderData
+   into @orderId,@shipname
+
+   while @@FETCH_STATUS =0
+   begin 
+        print '------------- Order Id : '+@orderid
+        print '------------- Shipname : '+@shipname
+
+       fetch next from cur_OrderData
+        into @orderId,@shipname
+   end
+
+   close cur_OrderData
+   deallocate cur_OrderData
+
+
+   Fetch next from cur_CustomerData
+into @customerId,@companyName
+end
+--closing
+close cur_CustomerData
+--deallocation
+deallocate cur_CustomerData
+
+create table tbl_AuditOrder
+(auditid int identity(1,1) primary key,
+orderid int,
+customerid varchar(10),
+audittimestamp datetime default GetDate())
+
+create trigger trg_AfterOrderInsert
+on orders
+after insert
+as
+begin
+   insert into tbl_AuditOrder(orderid,customerid)
+   select orderid,customerid from inserted
+end
+
+insert into orders(CustomerID,EmployeeID,OrderDate,ShipAddress)
+values('VICTE',2,GetDate(),'Abc, 12')
+
+select * from tbl_AuditOrder
+select * from orders where customerid = 'VICTE'
+
+--CTE
+with CTE_Products as(
+select categoryName cname,ProductName pname,CompanyName cmpname
+from Categories c join PRoducts p
+on c.CategoryID = p.CategoryID
+join Suppliers s
+on s.SupplierID = p.SupplierID
+)
+select * from CTE_Products
+order by pname
+
+--temptable example
+create table ##TempCustomer(customerId nvarchar(5),OrderCount int)
+insert into ##TempCustomer 
+select customerId,count(orderid)
+from orders group by CustomerID
+order by 2 desc
+
+select top 5 * from ##TempCustomer order by 2 desc
+
+drop table #TempCustomer
+
+select productId, case when unitprice>50 then 'costly' else 'Okay' end Price_Comment
+from products
+
+select productId, iif(unitprice>50 ,'costly' ,'Okay' ) Price_Comment
+from products
+
+select customerid, companyname from customers
+for xml auto
+
+sp_help products
+
+select * from [Order Details]
+
+
+
+begin transaction
+
+update [Order Details]
+set Discount = Discount +.5
+where Quantity > 20
+
+if @@ERROR <>0
+begin
+   rollback;
+   print 'Transaction did not go through'
+end
+else
+begin
+   commit
+   print 'All updates done'
+end
+
+
+create table tbl1(f1 int,f2 char(4))
+
+begin transaction
+  insert into tbl1 values(1,'abc')
+  save transaction MySavePoint
+  insert into tbl1 values(2,'xyz')
+  print 'all inserts doem temp'
+  if(select count(*) from tbl1)>1
+     rollback transaction MySavepoint
+  commit
+
+  select * from tbl1
