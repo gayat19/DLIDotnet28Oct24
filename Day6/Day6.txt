@@ -1,0 +1,84 @@
+EF Core -> Code first
+Database first
+
+ORM
+ADO.NET
+  - Connection
+  - Command
+  - Data Reader/Data Adapter -> get the data
+  - Iterated -> Create collection
+
+
+Structure of a table - Class
+Tables - Collections(DbSet inside the Context)
+Tuples - Objects
+Attributes - Properties
+Constraints - Rules/Validations
+
+https://learn.microsoft.com/en-us/ef/core/
+
+Server=DESKTOP-KVHT2L3\SQLEXPRESS;Database=dbShopping;Trusted_Connection=True"
+
+ Microsoft.EntityFrameworkCore.SqlServer Version="8.0.10" 
+ Microsoft.EntityFrameworkCore.Tools Version="8.0.10"
+ 
+ Add-Migration init
+ update-database
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFUnderstanding.Models
+{
+    public class Customer : IEquatable<Customer>, IComparable<Customer>
+    {
+        //since its int -> identity will be included automatically
+        public int Id { get; set; }//Id indicates that this will be teh primary key of the table
+        public string Name { get; set; } = string.Empty;
+        public decimal Phone { get; set; }
+        public string Email { get; set; } = string.Empty;
+
+        public int CompareTo(Customer? other)
+        {
+            var customer = other ?? new Customer();
+            return customer.Name.CompareTo(this.Name);
+        }
+
+        public bool Equals(Customer? other)
+        {
+            var customer = other ?? new Customer();
+            return customer.Id.Equals(this.Id);
+        }
+        public override string ToString()
+        {
+            return $"Id {Id}\tName {Name}\tPhone {Phone}\tEmail {Email}";
+        }
+    }
+
+}
+---------------------------------------------------------
+
+using EFUnderstanding.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFUnderstanding.Contexts
+{
+    public class ShoppingContext:DbContext
+    {
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-KVHT2L3\SQLEXPRESS;Database=dbShopping;TrustServerCertificate=True;Integrated security=true");
+        }
+        public DbSet<Customer> Customers { get; set; } //By default this property name will be the table name
+    }
+}
+
+
