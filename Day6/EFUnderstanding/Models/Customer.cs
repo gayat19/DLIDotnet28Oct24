@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,11 @@ namespace EFUnderstanding.Models
         public decimal Phone { get; set; }
         public string Email { get; set; } = string.Empty;
         public DateTime DateOfBirth { get; set; }
+
+        public string? Username { get; set; }
+
+        [ForeignKey("Username")]
+        public User? User { get; set; }//navigation property
 
         public int CompareTo(Customer? other)
         {

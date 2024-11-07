@@ -1,0 +1,187 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFUnderstanding.Models
+{
+    public class Product : IComparable<Product>, IEquatable<Product>
+    {
+        public int ProductNumber { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public float Price { get; set; }
+        public int Quantity { get; set; }
+       
+        public string BasicImgae { get; set; }
+        public Product()
+        {
+            Name = string.Empty;
+            Description = string.Empty;
+            BasicImgae = string.Empty;
+        }
+
+        //public Product(int id, string name, float price, int? quantity, string? description, string? basicImgae)
+        //{
+        //    Id = id;
+        //    Name = name;
+        //    Description = description??string.Empty;
+        //    Price = price;
+        //    Quantity = quantity??0;
+        //    BasicImgae = basicImgae ?? string.Empty;
+        //}
+        public Product(int id, string name, float price) : this()
+        {
+            ProductNumber = id;
+            Name = name;
+            Price = price;
+        }
+        public override string ToString()
+        {
+            return $"Id {ProductNumber} \tName: {Name} \tPrice {Price} \tQuantity {Quantity}";
+        }
+
+        public int CompareTo(Product? other)
+        {
+            var product = other ?? new Product() { Price = 0 };
+            return this.Price.CompareTo(product.Price);
+        }
+
+        public bool Equals(Product? other)
+        {
+            var product = other ?? new Product() { Price = 0, Name = string.Empty };
+            return this.Price.Equals(product.Price) && this.Name.Equals(product.Name);
+        }
+
+    }
+}
+-------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFUnderstanding.Models
+{
+    public class User
+    {
+        [Key]
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty ;
+    }
+}
+--------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFUnderstanding.Models
+{
+    public class Customer : IEquatable<Customer>, IComparable<Customer>
+    {
+        //since its int -> identity will be included automatically
+        public int Id { get; set; }//Id indicates that this will be teh primary key of the table
+        public string Name { get; set; } = string.Empty;
+        public decimal Phone { get; set; }
+        public string Email { get; set; } = string.Empty;
+        public DateTime DateOfBirth { get; set; }
+
+        public string? Username { get; set; }
+
+        [ForeignKey("Username")]
+        public User? User { get; set; }//navigation property
+
+        public int CompareTo(Customer? other)
+        {
+            var customer = other ?? new Customer();
+            return customer.Name.CompareTo(this.Name);
+        }
+
+        public bool Equals(Customer? other)
+        {
+            var customer = other ?? new Customer();
+            return customer.Id.Equals(this.Id);
+        }
+        public override string ToString()
+        {
+            return $"Id {Id}\tName {Name}\tPhone {Phone}\tEmail {Email}";
+        }
+    }
+
+}
+------------------------------------------------------
+using EFUnderstanding.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFUnderstanding.Contexts
+{
+    public class ShoppingContext:DbContext
+    {
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-KVHT2L3\SQLEXPRESS;Database=dbShopping;TrustServerCertificate=True;Integrated security=true");
+        }
+        public DbSet<Customer> Customers { get; set; } //By default this property name will be the table name
+        public DbSet<User> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //creatingteh primary key
+            modelBuilder.Entity<Product>().HasKey(prod => prod.ProductNumber).HasName("PK_ProductNumber");
+
+
+            //seeding data
+            modelBuilder.Entity<User>().HasData(
+                            new User { Username = "ramu", Password = "1234" },
+                            new User { Username = "somu", Password = "4321" });
+
+            modelBuilder.Entity<Customer>().HasData(
+                new Customer { Id = 101, Name = "Ramu", Email = "ramu@gmail.com", Phone = 9876543210, DateOfBirth = new DateTime(2000,10,19), Username = "ramu" });
+        }
+    }
+}
+-------------------------------------------------------
+using EFUnderstanding.Contexts;
+
+ShoppingContext context = new ShoppingContext();
+var customers = context.Customers;
+foreach (var customer in customers)
+    Console.WriteLine(customer);
+
+var users = context.Users;
+foreach (var user in users)
+    Console.WriteLine(user.Username+"        "+user.Password);
+---------------------------------------------------------------------
+using EFUnderstanding.Contexts;
+using EFUnderstanding.Models;
+
+ShoppingContext context = new ShoppingContext();
+//var customers = context.Customers;
+//foreach (var customer in customers)
+//    Console.WriteLine(customer);
+
+User user1 = new User() { Username = "monu", Password = "1111" };
+User user2 = new User() { Username = "lumu", Password = "2222" };
+context.Users.Add(user1);
+context.Users.Add(user2);
+//You decide user1 need not be added due to a condition
+context.Entry<User>(user1).State = Microsoft.EntityFrameworkCore.EntityState.Unchanged;
+Console.WriteLine(context.Entry<User>(user1).State);
+context.SaveChanges();
+Console.WriteLine(context.Entry<User>(user1).State);
+
+
+var users = context.Users;
+foreach (var user in users)
+    Console.WriteLine(user.Username+"        "+user.Password);

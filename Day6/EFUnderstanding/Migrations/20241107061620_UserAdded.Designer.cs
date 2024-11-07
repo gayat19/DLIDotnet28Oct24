@@ -4,6 +4,7 @@ using EFUnderstanding.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFUnderstanding.Migrations
 {
     [DbContext(typeof(ShoppingContext))]
-    partial class ShoppingContextModelSnapshot : ModelSnapshot
+    [Migration("20241107061620_UserAdded")]
+    partial class UserAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,49 +55,6 @@ namespace EFUnderstanding.Migrations
                     b.HasIndex("Username");
 
                     b.ToTable("Customers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 101,
-                            DateOfBirth = new DateTime(2000, 10, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "ramu@gmail.com",
-                            Name = "Ramu",
-                            Phone = 9876543210m,
-                            Username = "ramu"
-                        });
-                });
-
-            modelBuilder.Entity("EFUnderstanding.Models.Product", b =>
-                {
-                    b.Property<int>("ProductNumber")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductNumber"));
-
-                    b.Property<string>("BasicImgae")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<float>("Price")
-                        .HasColumnType("real");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductNumber")
-                        .HasName("PK_ProductNumber");
-
-                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("EFUnderstanding.Models.User", b =>
@@ -109,18 +69,6 @@ namespace EFUnderstanding.Migrations
                     b.HasKey("Username");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Username = "ramu",
-                            Password = "1234"
-                        },
-                        new
-                        {
-                            Username = "somu",
-                            Password = "4321"
-                        });
                 });
 
             modelBuilder.Entity("EFUnderstanding.Models.Customer", b =>
