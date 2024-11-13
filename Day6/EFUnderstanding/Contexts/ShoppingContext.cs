@@ -17,10 +17,25 @@ namespace EFUnderstanding.Contexts
         public DbSet<Customer> Customers { get; set; } //By default this property name will be the table name
         public DbSet<User> Users { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //creatingteh primary key
             modelBuilder.Entity<Product>().HasKey(prod => prod.ProductNumber).HasName("PK_ProductNumber");
+
+            //modelBuilder.Entity<Order>().Property(o => o.OrderId).HasColumnName("OrderNumber");
+            modelBuilder.Entity<Order>().HasKey(o => o.OrderId).HasName("PK_OrderID");
+
+            modelBuilder.Entity<Order>()
+                .HasOne(o => o.Customer)
+                .WithMany(c => c.Orders)
+                .HasForeignKey(o => o.CustomerId)
+                .HasConstraintName("FK_OrderCustomer");
+
+            modelBuilder.Entity<Order>()
+                  .Property(o => o.OrderStatus)
+                  .HasColumnType("varchar")
+                  .HasMaxLength(10);
 
 
             //seeding data
@@ -30,6 +45,9 @@ namespace EFUnderstanding.Contexts
 
             modelBuilder.Entity<Customer>().HasData(
                 new Customer { Id = 101, Name = "Ramu", Email = "ramu@gmail.com", Phone = 9876543210, DateOfBirth = new DateTime(2000,10,19), Username = "ramu" });
+            
+
+            //modelBuilder.Entity<Order>().HasData(new Order { OrderId=1,OrderDate=DateTime.Now,CustomerId=101,TotalAmount=30,Customer=new Customer { Id = 101 } });
         }
     }
 }

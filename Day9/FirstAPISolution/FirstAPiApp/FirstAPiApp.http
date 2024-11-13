@@ -1,0 +1,8 @@
+@FirstAPiApp_HostAddress = http://localhost:5131
+
+GET {{FirstAPiApp_HostAddress}}/api/First/
+Accept: application/json
+
+###
+POST {{FirstAPiApp_HostAddress}}/api/First/
+Accept: application/json

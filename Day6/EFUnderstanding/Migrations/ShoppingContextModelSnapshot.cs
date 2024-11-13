@@ -65,6 +65,36 @@ namespace EFUnderstanding.Migrations
                         });
                 });
 
+            modelBuilder.Entity("EFUnderstanding.Models.Order", b =>
+                {
+                    b.Property<int>("OrderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("OrderStatus")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar");
+
+                    b.Property<float>("TotalAmount")
+                        .HasColumnType("real");
+
+                    b.HasKey("OrderId")
+                        .HasName("PK_OrderID");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Orders");
+                });
+
             modelBuilder.Entity("EFUnderstanding.Models.Product", b =>
                 {
                     b.Property<int>("ProductNumber")
@@ -106,6 +136,9 @@ namespace EFUnderstanding.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.HasKey("Username");
 
                     b.ToTable("Users");
@@ -114,12 +147,14 @@ namespace EFUnderstanding.Migrations
                         new
                         {
                             Username = "ramu",
-                            Password = "1234"
+                            Password = "1234",
+                            Status = 1
                         },
                         new
                         {
                             Username = "somu",
-                            Password = "4321"
+                            Password = "4321",
+                            Status = 1
                         });
                 });
 
@@ -130,6 +165,23 @@ namespace EFUnderstanding.Migrations
                         .HasForeignKey("Username");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EFUnderstanding.Models.Order", b =>
+                {
+                    b.HasOne("EFUnderstanding.Models.Customer", "Customer")
+                        .WithMany("Orders")
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_OrderCustomer");
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("EFUnderstanding.Models.Customer", b =>
+                {
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

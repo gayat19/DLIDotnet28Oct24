@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|c:\\corp\\velveer\\participants\\day6\\efunderstanding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|c:\\corp\\velveer\\participants\\day6\\efunderstanding\\contexts\\shoppingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|solutionrelative:contexts\\shoppingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|c:\\corp\\velveer\\participants\\day6\\efunderstanding\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|c:\\corp\\velveer\\participants\\day6\\efunderstanding\\models\\stringcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|solutionrelative:models\\stringcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|c:\\corp\\velveer\\participants\\day6\\efunderstanding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|c:\\corp\\velveer\\participants\\day6\\efunderstanding\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +23,16 @@
       "RelativeMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|c:\\corp\\velveer\\participants\\day6\\efunderstanding\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|c:\\corp\\velveer\\participants\\day6\\efunderstanding\\efunderstanding.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|solutionrelative:efunderstanding.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|c:\\corp\\velveer\\participants\\day6\\efunderstanding\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52486557-4A69-4574-925C-5766276C8967}|EFUnderstanding.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +42,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAwwCwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T06:04:34.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StringCheck.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Models\\StringCheck.cs",
+              "RelativeDocumentMoniker": "Models\\StringCheck.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Models\\StringCheck.cs",
+              "RelativeToolTip": "Models\\StringCheck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T07:07:03.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T06:06:15.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
@@ -46,8 +92,7 @@
               "RelativeToolTip": "Models\\Product.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAiwDoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T06:28:49.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T06:28:49.319Z"
             },
             {
               "$type": "Document",
@@ -57,33 +102,32 @@
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAADgvw8AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T06:08:46.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "EFUnderstanding.csproj",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\EFUnderstanding.csproj",
               "RelativeDocumentMoniker": "EFUnderstanding.csproj",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\EFUnderstanding.csproj",
               "RelativeToolTip": "EFUnderstanding.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-06T06:53:56.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T06:53:56.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ShoppingContext.cs",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Contexts\\ShoppingContext.cs",
               "RelativeDocumentMoniker": "Contexts\\ShoppingContext.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Contexts\\ShoppingContext.cs",
               "RelativeToolTip": "Contexts\\ShoppingContext.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAgwB8AAABbAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAjwDIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T06:28:27.613Z",
               "EditorCaption": ""
@@ -96,22 +140,9 @@
               "RelativeDocumentMoniker": "Models\\Customer.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Models\\Customer.cs",
               "RelativeToolTip": "Models\\Customer.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAADgvw8AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T06:15:19.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T06:04:34.228Z",
               "EditorCaption": ""
             }
           ]

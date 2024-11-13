@@ -21,6 +21,9 @@ namespace EFUnderstanding.Models
         [ForeignKey("Username")]
         public User? User { get; set; }//navigation property
 
+
+        public ICollection<Order> Orders { get; set; }
+
         public int CompareTo(Customer? other)
         {
             var customer = other ?? new Customer();
