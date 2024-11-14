@@ -12,6 +12,10 @@ namespace FirstAPiApp.Repositories
         {
             _hrContext = context;
         }
+        //public DepartmentRepository()
+        //{
+        //    _hrContext = new HRContext();
+        //}
         public async Task<Department> AddAsync(Department item)
         {
             try

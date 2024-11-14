@@ -1,5 +1,6 @@
 ﻿using FirstAPiApp.Interfaces;
 using FirstAPiApp.Models;
+using FirstAPiApp.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,10 +12,14 @@ namespace FirstAPiApp.Controllers
     {
         private readonly IRepository<int, Department> _departmentRepository;
 
-        public DepartmentController(IRepository<int,Department> repository)
+        public DepartmentController(IRepository<int, Department> repository)
         {
             _departmentRepository = repository;
         }
+        //public DepartmentController()
+        //{
+        //    _departmentRepository = new DepartmentRepository();
+        //}
         [HttpGet]
         public async Task<ActionResult<ICollection<Department>>> Get()
         {

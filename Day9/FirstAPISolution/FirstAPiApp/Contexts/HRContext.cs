@@ -5,10 +5,19 @@ namespace FirstAPiApp.Contexts
 {
     public class HRContext :DbContext
     {
-        public HRContext(DbContextOptions options):base(options)
+        public HRContext(DbContextOptions options) : base(options)
         {
-            
+
         }
+        //string conStr;
+        //public HRContext()
+        //{
+        //    conStr = "";
+        //}
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer(conStr);
+        //}
         public DbSet<Employee>   Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
 
