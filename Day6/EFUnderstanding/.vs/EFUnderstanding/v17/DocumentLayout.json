@@ -42,8 +42,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -54,8 +58,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAwwCwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T06:04:34.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T06:04:34.228Z"
             },
             {
               "$type": "Document",
@@ -67,8 +70,7 @@
               "RelativeToolTip": "Models\\StringCheck.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T07:07:03.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T07:07:03.316Z"
             },
             {
               "$type": "Document",
@@ -104,8 +106,7 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADgvw8AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T06:08:46.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T06:08:46.36Z"
             },
             {
               "$type": "Document",
@@ -127,7 +128,7 @@
               "RelativeDocumentMoniker": "Contexts\\ShoppingContext.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day6\\EFUnderstanding\\Contexts\\ShoppingContext.cs",
               "RelativeToolTip": "Contexts\\ShoppingContext.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAjwDIAAAAIAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAIA4wDIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T06:28:27.613Z",
               "EditorCaption": ""
@@ -142,8 +143,7 @@
               "RelativeToolTip": "Models\\Customer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADgvw8AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T06:15:19.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T06:15:19.453Z"
             }
           ]
         }

@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\services\\departmnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\services\\departmnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\interfaces\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\models\\dtos\\departmentemployessresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\models\\dtos\\departmentemployessresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\models\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\models\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\mapper\\departmentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\mapper\\departmentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60559DB1-5CB6-49C6-A574-12E6706356BE}|ShoppingAppTest\\ShoppingAppTest.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\shoppingapptest\\departmentservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60559DB1-5CB6-49C6-A574-12E6706356BE}|ShoppingAppTest\\ShoppingAppTest.csproj|solutionrelative:shoppingapptest\\departmentservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60559DB1-5CB6-49C6-A574-12E6706356BE}|ShoppingAppTest\\ShoppingAppTest.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\shoppingapptest\\departmenttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60559DB1-5CB6-49C6-A574-12E6706356BE}|ShoppingAppTest\\ShoppingAppTest.csproj|solutionrelative:shoppingapptest\\departmenttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\services\\departmnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\services\\departmnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,20 +35,12 @@
       "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60559DB1-5CB6-49C6-A574-12E6706356BE}|ShoppingAppTest\\ShoppingAppTest.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\shoppingapptest\\departmenttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60559DB1-5CB6-49C6-A574-12E6706356BE}|ShoppingAppTest\\ShoppingAppTest.csproj|solutionrelative:shoppingapptest\\departmenttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\contexts\\hrcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\contexts\\hrcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60559DB1-5CB6-49C6-A574-12E6706356BE}|ShoppingAppTest\\ShoppingAppTest.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\shoppingapptest\\testservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60559DB1-5CB6-49C6-A574-12E6706356BE}|ShoppingAppTest\\ShoppingAppTest.csproj|solutionrelative:shoppingapptest\\testservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,168 +58,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeeDTO.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\DTOs\\EmployeeDTO.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Models\\DTOs\\EmployeeDTO.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\DTOs\\EmployeeDTO.cs",
-              "RelativeToolTip": "FirstAPiApp\\Models\\DTOs\\EmployeeDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
+              "DocumentIndex": 1,
+              "Title": "DepartmentProfile.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Mapper\\DepartmentProfile.cs",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Mapper\\DepartmentProfile.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Mapper\\DepartmentProfile.cs",
+              "RelativeToolTip": "FirstAPiApp\\Mapper\\DepartmentProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T07:02:39.634Z",
+              "WhenOpened": "2024-11-18T11:09:44.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DepartmentEmployessResponseDTO.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\DTOs\\DepartmentEmployessResponseDTO.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Models\\DTOs\\DepartmentEmployessResponseDTO.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\DTOs\\DepartmentEmployessResponseDTO.cs",
-              "RelativeToolTip": "FirstAPiApp\\Models\\DTOs\\DepartmentEmployessResponseDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T07:01:32.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DepartmnetService.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\DepartmnetService.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Services\\DepartmnetService.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\DepartmnetService.cs",
-              "RelativeToolTip": "FirstAPiApp\\Services\\DepartmnetService.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAkwEMAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:48:06.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Repositories\\EmployeeRepository.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Repositories\\EmployeeRepository.cs",
               "RelativeToolTip": "FirstAPiApp\\Repositories\\EmployeeRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:41:43.537Z",
+              "WhenOpened": "2024-11-18T11:08:06.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Repositories\\Repository.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Repositories\\Repository.cs",
               "RelativeToolTip": "FirstAPiApp\\Repositories\\Repository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:31:30.686Z",
+              "WhenOpened": "2024-11-18T11:07:48.393Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IDepartmentService.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Interfaces\\IDepartmentService.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Interfaces\\IDepartmentService.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Interfaces\\IDepartmentService.cs",
-              "RelativeToolTip": "FirstAPiApp\\Interfaces\\IDepartmentService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA+AAAA",
+              "DocumentIndex": 8,
+              "Title": "HRContext.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Contexts\\HRContext.cs",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Contexts\\HRContext.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Contexts\\HRContext.cs",
+              "RelativeToolTip": "FirstAPiApp\\Contexts\\HRContext.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA1wA8AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:28:31.688Z",
+              "WhenOpened": "2024-11-18T11:07:20.787Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "FirstAPiApp\\Controllers\\EmployeeController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBoAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:12:25.533Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Controllers\\DepartmentController.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "FirstAPiApp\\Controllers\\DepartmentController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwBsAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:11:20.289Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Properties\\launchSettings.json",
-              "RelativeToolTip": "FirstAPiApp\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-15T06:09:28.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Program.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Program.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Program.cs",
               "RelativeToolTip": "FirstAPiApp\\Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABsAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:05:36.317Z",
+              "WhenOpened": "2024-11-18T10:48:48.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "FirstAPiApp\\Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwBkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:53:43.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DepartmentRepository.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Repositories\\DepartmentRepository.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Repositories\\DepartmentRepository.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Repositories\\DepartmentRepository.cs",
-              "RelativeToolTip": "FirstAPiApp\\Repositories\\DepartmentRepository.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAgwDUAAAA0AAAA",
+              "Title": "DepartmnetService.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\DepartmnetService.cs",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Services\\DepartmnetService.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\DepartmnetService.cs",
+              "RelativeToolTip": "FirstAPiApp\\Services\\DepartmnetService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwBwAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:14:41.248Z",
+              "WhenOpened": "2024-11-18T10:29:06.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TestServiceTest.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\TestServiceTest.cs",
-              "RelativeDocumentMoniker": "ShoppingAppTest\\TestServiceTest.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\TestServiceTest.cs",
-              "RelativeToolTip": "ShoppingAppTest\\TestServiceTest.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:13:42.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "DepartmentTests.cs",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\DepartmentTests.cs",
               "RelativeDocumentMoniker": "ShoppingAppTest\\DepartmentTests.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\DepartmentTests.cs",
               "RelativeToolTip": "ShoppingAppTest\\DepartmentTests.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAiwCwAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T06:37:42.329Z",
+              "WhenOpened": "2024-11-18T10:27:03.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DepartmentServiceTest.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\DepartmentServiceTest.cs",
+              "RelativeDocumentMoniker": "ShoppingAppTest\\DepartmentServiceTest.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\DepartmentServiceTest.cs",
+              "RelativeToolTip": "ShoppingAppTest\\DepartmentServiceTest.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAvwDMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:26:48.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Models\\Employee.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\Employee.cs",
+              "RelativeToolTip": "FirstAPiApp\\Models\\Employee.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:38:07.796Z",
               "EditorCaption": ""
             }
           ]

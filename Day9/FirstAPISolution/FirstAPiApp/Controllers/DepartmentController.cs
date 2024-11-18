@@ -1,6 +1,8 @@
 ﻿using FirstAPiApp.Interfaces;
 using FirstAPiApp.Models;
+using FirstAPiApp.Models.DTOs;
 using FirstAPiApp.Repositories;
+using FirstAPiApp.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,28 +12,24 @@ namespace FirstAPiApp.Controllers
     [ApiController]
     public class DepartmentController : ControllerBase
     {
-        private readonly IRepository<int, Department> _departmentRepository;
+        private readonly IDepartmentService _departmentService;
 
-        public DepartmentController(IRepository<int, Department> repository)
+        public DepartmentController(IDepartmentService departmentService)
         {
-            _departmentRepository = repository;
+            _departmentService = departmentService;
         }
-        //public DepartmentController()
-        //{
-        //    _departmentRepository = new DepartmentRepository();
-        //}
+
         [HttpGet]
-        public async Task<ActionResult<ICollection<Department>>> Get()
+        public async Task<ActionResult<ICollection<DepartmentEmployessResponseDTO>>> Get()
         {
             try
             {
-                var departments = await _departmentRepository.GetAllAsync();
+                var departments = await _departmentService.GetDepartmnetsWithEmployees();
                 return Ok(departments);
-
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new ErrorObject { ErrorCode=400,Message=ex.Message});
             }
         }
     }

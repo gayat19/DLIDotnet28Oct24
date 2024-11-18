@@ -1,4 +1,5 @@
-﻿using FirstAPiApp.Interfaces;
+﻿using AutoMapper;
+using FirstAPiApp.Interfaces;
 using FirstAPiApp.Models;
 using FirstAPiApp.Models.DTOs;
 using FirstAPiApp.Repositories;
@@ -9,12 +10,15 @@ namespace FirstAPiApp.Services
     {
         private readonly IRepository<int, Department> _departmentRepository;
         private readonly IRepository<int, Employee> _employeeRepository;
+        private readonly IMapper _mapper;
 
         public DepartmnetService(IRepository<int,Department> departmentRepository,
-                                IRepository<int,Employee> employeeRepository) 
+                                IRepository<int,Employee> employeeRepository,
+                                IMapper mapper) 
         {
             _departmentRepository = departmentRepository;
             _employeeRepository = employeeRepository;
+            _mapper = mapper;
         }
         public async Task<Department> Add(string name)
         {
@@ -35,13 +39,9 @@ namespace FirstAPiApp.Services
             var departments = await _departmentRepository.GetAllAsync();
             foreach (var department in departments) 
             {
-                var departmnetDto = new DepartmentEmployessResponseDTO()
-                {
-                    DepartmentId = department.DepartmentId,
-                    DepartmentName = department.DepartmentName,
-                    Employees = await GetEmployeesFromDepartmnet(department.DepartmentName)
-                };
-                empDepDto.Add(departmnetDto);
+                var depatmentDto = _mapper.Map<DepartmentEmployessResponseDTO>(department);
+                depatmentDto.Employees = await GetEmployeesFromDepartmnet(department.DepartmentName);
+                empDepDto.Add(depatmentDto);
             }
             return empDepDto;
         }
@@ -52,7 +52,7 @@ namespace FirstAPiApp.Services
             var result = await GetEmployees(name);
             foreach (var employee in result)
             {
-                depEmployees.Add(new EmployeeDTO { Id = employee.Id, Name = employee.Name, });
+                depEmployees.Add(_mapper.Map<EmployeeDTO>(employee));
             }
             return depEmployees;
         }

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.37270000000000003" branch-rate="0" version="1.9" timestamp="1731651920" lines-covered="63" lines-valid="169" branches-covered="0" branches-valid="16">
+<coverage line-rate="0.5" branch-rate="0.1764" version="1.9" timestamp="1731927184" lines-covered="153" lines-valid="306" branches-covered="6" branches-valid="34">
   <sources>
     <source>C:\</source>
   </sources>
   <packages>
-    <package name="FirstAPiApp" line-rate="0.2827" branch-rate="0" complexity="43">
+    <package name="FirstAPiApp" line-rate="0.39840000000000003" branch-rate="0.1764" complexity="77">
       <classes>
         <class name="Program" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Program.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
@@ -19,19 +19,22 @@
                 <line number="19" hits="0" branch="False" />
                 <line number="20" hits="0" branch="False" />
                 <line number="24" hits="0" branch="False" />
-                <line number="27" hits="0" branch="False" />
-                <line number="30" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="25" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="143" type="jump" coverage="0%" />
+                    <condition number="232" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="31" hits="0" branch="False" />
-                <line number="32" hits="0" branch="False" />
-                <line number="33" hits="0" branch="False" />
-                <line number="34" hits="0" branch="False" />
-                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
                 <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
                 <line number="40" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
@@ -45,19 +48,216 @@
             <line number="19" hits="0" branch="False" />
             <line number="20" hits="0" branch="False" />
             <line number="24" hits="0" branch="False" />
-            <line number="27" hits="0" branch="False" />
-            <line number="30" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="25" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="143" type="jump" coverage="0%" />
+                <condition number="232" type="jump" coverage="0%" />
               </conditions>
             </line>
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Services.DepartmnetService" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Services\DepartmnetService.cs" line-rate="0.8" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Remove" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="67" hits="0" branch="False" />
+                <line number="68" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(FirstAPiApp.Interfaces.IRepository`2&lt;System.Int32,FirstAPiApp.Models.Department&gt;,FirstAPiApp.Interfaces.IRepository`2&lt;System.Int32,FirstAPiApp.Models.Employee&gt;,AutoMapper.IMapper)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
+                <line number="18" hits="1" branch="False" />
+                <line number="19" hits="1" branch="False" />
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="67" hits="0" branch="False" />
+            <line number="68" hits="0" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
+            <line number="18" hits="1" branch="False" />
+            <line number="19" hits="1" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Services.DepartmnetService/&lt;&gt;c__DisplayClass4_0" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Services\DepartmnetService.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;Add&gt;b__0" signature="(FirstAPiApp.Models.Department)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Services.DepartmnetService/&lt;&gt;c__DisplayClass7_0" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Services\DepartmnetService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="&lt;GetEmployees&gt;b__0" signature="(FirstAPiApp.Models.Department)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="61" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;GetEmployees&gt;b__1" signature="(FirstAPiApp.Models.Employee)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="62" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="61" hits="2" branch="False" />
+            <line number="62" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Services.DepartmnetService/&lt;Add&gt;d__4" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Services\DepartmnetService.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="27" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="231" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="27" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="231" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
             <line number="31" hits="0" branch="False" />
-            <line number="32" hits="0" branch="False" />
             <line number="33" hits="0" branch="False" />
             <line number="34" hits="0" branch="False" />
-            <line number="36" hits="0" branch="False" />
-            <line number="38" hits="0" branch="False" />
-            <line number="40" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Services.DepartmnetService/&lt;GetDepartmnetsWithEmployees&gt;d__5" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Services\DepartmnetService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="40" hits="5" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="456" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="40" hits="5" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="456" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Services.DepartmnetService/&lt;GetEmployees&gt;d__7" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Services\DepartmnetService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="60" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="60" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
+            <line number="64" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Services.DepartmnetService/&lt;GetEmployeesFromDepartmnet&gt;d__6" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Services\DepartmnetService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="49" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="53" hits="5" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="270" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="54" hits="1" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
+                <line number="57" hits="1" branch="False" />
+                <line number="58" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="49" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="53" hits="5" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="270" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="54" hits="1" branch="False" />
+            <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
+            <line number="57" hits="1" branch="False" />
+            <line number="58" hits="1" branch="False" />
           </lines>
         </class>
         <class name="FirstAPiApp.Services.TestService" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Services\TestService.cs" line-rate="0.4285" branch-rate="1" complexity="2">
@@ -92,46 +292,46 @@
           <methods>
             <method name=".ctor" signature="(FirstAPiApp.Contexts.HRContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="2" branch="False" />
-                <line number="12" hits="2" branch="False" />
-                <line number="13" hits="2" branch="False" />
-                <line number="14" hits="2" branch="False" />
+                <line number="11" hits="3" branch="False" />
+                <line number="12" hits="3" branch="False" />
+                <line number="13" hits="3" branch="False" />
+                <line number="14" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="2" branch="False" />
-            <line number="12" hits="2" branch="False" />
-            <line number="13" hits="2" branch="False" />
-            <line number="14" hits="2" branch="False" />
+            <line number="11" hits="3" branch="False" />
+            <line number="12" hits="3" branch="False" />
+            <line number="13" hits="3" branch="False" />
+            <line number="14" hits="3" branch="False" />
           </lines>
         </class>
         <class name="FirstAPiApp.Repositories.DepartmentRepository/&lt;AddAsync&gt;d__2" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\DepartmentRepository.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="2" branch="False" />
-                <line number="22" hits="2" branch="False" />
-                <line number="23" hits="2" branch="False" />
-                <line number="24" hits="2" branch="False" />
-                <line number="25" hits="1" branch="False" />
+                <line number="20" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+                <line number="23" hits="3" branch="False" />
+                <line number="24" hits="3" branch="False" />
+                <line number="25" hits="2" branch="False" />
                 <line number="27" hits="1" branch="False" />
                 <line number="28" hits="1" branch="False" />
                 <line number="29" hits="1" branch="False" />
-                <line number="31" hits="1" branch="False" />
+                <line number="31" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="20" hits="2" branch="False" />
-            <line number="22" hits="2" branch="False" />
-            <line number="23" hits="2" branch="False" />
-            <line number="24" hits="2" branch="False" />
-            <line number="25" hits="1" branch="False" />
+            <line number="20" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="23" hits="3" branch="False" />
+            <line number="24" hits="3" branch="False" />
+            <line number="25" hits="2" branch="False" />
             <line number="27" hits="1" branch="False" />
             <line number="28" hits="1" branch="False" />
             <line number="29" hits="1" branch="False" />
-            <line number="31" hits="1" branch="False" />
+            <line number="31" hits="2" branch="False" />
           </lines>
         </class>
         <class name="FirstAPiApp.Repositories.DepartmentRepository/&lt;DeleteAsync&gt;d__3" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\DepartmentRepository.cs" line-rate="0" branch-rate="0" complexity="2">
@@ -178,34 +378,34 @@
             <line number="50" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FirstAPiApp.Repositories.DepartmentRepository/&lt;GetAllAsync&gt;d__4" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\DepartmentRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FirstAPiApp.Repositories.DepartmentRepository/&lt;GetAllAsync&gt;d__4" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\DepartmentRepository.cs" line-rate="0.8332999999999999" branch-rate="0.5" complexity="2">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="0.8332999999999999" branch-rate="0.5" complexity="2">
               <lines>
-                <line number="53" hits="0" branch="False" />
-                <line number="54" hits="0" branch="False" />
-                <line number="55" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="53" hits="2" branch="False" />
+                <line number="54" hits="2" branch="False" />
+                <line number="55" hits="2" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
-                    <condition number="46" type="jump" coverage="0%" />
+                    <condition number="46" type="jump" coverage="50%" />
                   </conditions>
                 </line>
                 <line number="56" hits="0" branch="False" />
-                <line number="57" hits="0" branch="False" />
-                <line number="58" hits="0" branch="False" />
+                <line number="57" hits="2" branch="False" />
+                <line number="58" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="53" hits="0" branch="False" />
-            <line number="54" hits="0" branch="False" />
-            <line number="55" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="53" hits="2" branch="False" />
+            <line number="54" hits="2" branch="False" />
+            <line number="55" hits="2" branch="True" condition-coverage="50% (1/2)">
               <conditions>
-                <condition number="46" type="jump" coverage="0%" />
+                <condition number="46" type="jump" coverage="50%" />
               </conditions>
             </line>
             <line number="56" hits="0" branch="False" />
-            <line number="57" hits="0" branch="False" />
-            <line number="58" hits="0" branch="False" />
+            <line number="57" hits="2" branch="False" />
+            <line number="58" hits="2" branch="False" />
           </lines>
         </class>
         <class name="FirstAPiApp.Repositories.DepartmentRepository/&lt;GetAsync&gt;d__5" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\DepartmentRepository.cs" line-rate="0" branch-rate="0" complexity="2">
@@ -282,40 +482,242 @@
             <line number="85" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FirstAPiApp.Models.Department" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Models\Department.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="FirstAPiApp.Repositories.EmployeeRepository" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\EmployeeRepository.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name="get_DepartmentId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(FirstAPiApp.Contexts.HRContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="3" branch="False" />
-              </lines>
-            </method>
-            <method name="get_DepartmentName" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="6" hits="8" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Employees" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="7" hits="4" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="8" hits="4" branch="False" />
-                <line number="9" hits="4" branch="False" />
-                <line number="10" hits="4" branch="False" />
-                <line number="11" hits="4" branch="False" />
+                <line number="9" hits="1" branch="False" />
+                <line number="10" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="3" branch="False" />
-            <line number="6" hits="8" branch="False" />
-            <line number="7" hits="4" branch="False" />
-            <line number="8" hits="4" branch="False" />
-            <line number="9" hits="4" branch="False" />
-            <line number="10" hits="4" branch="False" />
-            <line number="11" hits="4" branch="False" />
+            <line number="9" hits="1" branch="False" />
+            <line number="10" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Repositories.EmployeeRepository/&lt;GetAllAsync&gt;d__1" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\EmployeeRepository.cs" line-rate="0.8332999999999999" branch-rate="0.5" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8332999999999999" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="14" hits="2" branch="False" />
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="46" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="17" hits="2" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="46" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="17" hits="2" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Repositories.EmployeeRepository/&lt;GetAsync&gt;d__2" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\EmployeeRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="303" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="303" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Repositories.Repository`2" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\Repository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(FirstAPiApp.Contexts.HRContext)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="1" branch="False" />
+                <line number="11" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="1" branch="False" />
+            <line number="11" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Repositories.Repository`2/&lt;AddAsync&gt;d__2" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\Repository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
+                <line number="18" hits="1" branch="False" />
+                <line number="19" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
+            <line number="18" hits="1" branch="False" />
+            <line number="19" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Repositories.Repository`2/&lt;DeleteAsync&gt;d__3" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\Repository.cs" line-rate="0" branch-rate="0" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="180" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="30" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="353" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="31" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="180" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="30" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="353" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="31" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Repositories.Repository`2/&lt;UpdateAsync&gt;d__6" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Repositories\Repository.cs" line-rate="0" branch-rate="0" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="180" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="48" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="353" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="49" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="180" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="48" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="353" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="49" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Models.Department" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Models\Department.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_DepartmentId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DepartmentName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="13" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Employees" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="5" branch="False" />
+                <line number="9" hits="5" branch="False" />
+                <line number="10" hits="5" branch="False" />
+                <line number="11" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="5" branch="False" />
+            <line number="6" hits="13" branch="False" />
+            <line number="7" hits="5" branch="False" />
+            <line number="8" hits="5" branch="False" />
+            <line number="9" hits="5" branch="False" />
+            <line number="10" hits="5" branch="False" />
+            <line number="11" hits="5" branch="False" />
           </lines>
         </class>
         <class name="FirstAPiApp.Models.Employee" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Models\Employee.cs" line-rate="0.8" branch-rate="1" complexity="5">
@@ -327,17 +729,17 @@
             </method>
             <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="8" branch="False" />
+                <line number="8" hits="10" branch="False" />
               </lines>
             </method>
             <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="8" branch="False" />
+                <line number="9" hits="10" branch="False" />
               </lines>
             </method>
             <method name="get_DepartmentId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="4" branch="False" />
+                <line number="10" hits="6" branch="False" />
               </lines>
             </method>
             <method name="get_Department" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -348,9 +750,9 @@
           </methods>
           <lines>
             <line number="7" hits="4" branch="False" />
-            <line number="8" hits="8" branch="False" />
-            <line number="9" hits="8" branch="False" />
-            <line number="10" hits="4" branch="False" />
+            <line number="8" hits="10" branch="False" />
+            <line number="9" hits="10" branch="False" />
+            <line number="10" hits="6" branch="False" />
             <line number="13" hits="0" branch="False" />
           </lines>
         </class>
@@ -368,6 +770,88 @@
             </method>
           </methods>
           <lines>
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Models.DTOs.DepartmentEmployessResponseDTO" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Models\DTOs\DepartmentEmployessResponseDTO.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_DepartmentId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DepartmentName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Employees" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="1" branch="False" />
+            <line number="6" hits="1" branch="False" />
+            <line number="7" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Models.DTOs.EmployeeDTO" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Models\DTOs\EmployeeDTO.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="False" />
+            <line number="6" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Mapper.DepartmentProfile" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Mapper\DepartmentProfile.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="FirstAPiApp.Mapper.EmployeeProfile" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\Mapper\EmployeeProfile.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
             <line number="12" hits="0" branch="False" />
             <line number="13" hits="0" branch="False" />
           </lines>
@@ -540,12 +1024,12 @@
           <methods>
             <method name="get_Employees" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="2" branch="False" />
+                <line number="21" hits="5" branch="False" />
               </lines>
             </method>
             <method name="get_Departments" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="2" branch="False" />
+                <line number="22" hits="5" branch="False" />
               </lines>
             </method>
             <method name="OnModelCreating" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="1" branch-rate="1" complexity="1">
@@ -563,15 +1047,15 @@
             </method>
             <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="2" branch="False" />
-                <line number="9" hits="2" branch="False" />
-                <line number="11" hits="2" branch="False" />
+                <line number="8" hits="3" branch="False" />
+                <line number="9" hits="3" branch="False" />
+                <line number="11" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="21" hits="2" branch="False" />
-            <line number="22" hits="2" branch="False" />
+            <line number="21" hits="5" branch="False" />
+            <line number="22" hits="5" branch="False" />
             <line number="25" hits="1" branch="False" />
             <line number="26" hits="1" branch="False" />
             <line number="27" hits="1" branch="False" />
@@ -581,14 +1065,14 @@
             <line number="31" hits="1" branch="False" />
             <line number="32" hits="1" branch="False" />
             <line number="33" hits="1" branch="False" />
-            <line number="8" hits="2" branch="False" />
-            <line number="9" hits="2" branch="False" />
-            <line number="11" hits="2" branch="False" />
+            <line number="8" hits="3" branch="False" />
+            <line number="9" hits="3" branch="False" />
+            <line number="11" hits="3" branch="False" />
           </lines>
         </class>
       </classes>
     </package>
-    <package name="ShoppingAppTest" line-rate="0.9166" branch-rate="1" complexity="7">
+    <package name="ShoppingAppTest" line-rate="0.9636" branch-rate="1" complexity="10">
       <classes>
         <class name="AutoGeneratedProgram" filename="Users\Gayathri Mahadevan\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -600,6 +1084,92 @@
           </methods>
           <lines>
             <line number="4" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ShoppingAppTest.DepartmentServiceTest" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\DepartmentServiceTest.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Setup" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="23" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="20" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="ShoppingAppTest.DepartmentServiceTest/&lt;TestGetDepartmentWithEmployees&gt;d__5" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\DepartmentServiceTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
+                <line number="49" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="53" hits="1" branch="False" />
+                <line number="54" hits="1" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
+                <line number="57" hits="1" branch="False" />
+                <line number="58" hits="1" branch="False" />
+                <line number="59" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="49" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="53" hits="1" branch="False" />
+            <line number="54" hits="1" branch="False" />
+            <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
+            <line number="57" hits="1" branch="False" />
+            <line number="58" hits="1" branch="False" />
+            <line number="59" hits="1" branch="False" />
           </lines>
         </class>
         <class name="ShoppingAppTest.DepartmentTests" filename="Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\DepartmentTests.cs" line-rate="1" branch-rate="1" complexity="1">

@@ -2,6 +2,7 @@ using FirstAPiApp.Contexts;
 using FirstAPiApp.Interfaces;
 using FirstAPiApp.Models;
 using FirstAPiApp.Repositories;
+using FirstAPiApp.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,7 +26,14 @@ builder.Services.AddDbContext<HRContext>(opts =>
     builder.Services.AddScoped<IRepository<int,Employee>,EmployeeRepository>();
 #endregion
 
+#region Mappers
+builder.Services.AddAutoMapper(typeof(Department));
+builder.Services.AddAutoMapper(typeof(Employee));
+#endregion
 
+#region Services
+builder.Services.AddScoped<IDepartmentService, DepartmnetService>();
+#endregion
 
 var app = builder.Build();
 

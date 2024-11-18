@@ -9,15 +9,7 @@ namespace FirstAPiApp.Contexts
         {
 
         }
-        //string conStr;
-        //public HRContext()
-        //{
-        //    conStr = "";
-        //}
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(conStr);
-        //}
+
         public DbSet<Employee>   Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
 

@@ -156,3 +156,7 @@ C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\obj\Debug\net
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\obj\Debug\net8.0\ShoppingAppTest.genruntimeconfig.cache
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\obj\Debug\net8.0\ref\ShoppingAppTest.dll
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\AutoMapper.dll
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\Castle.Core.dll
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\Moq.dll
