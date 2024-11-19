@@ -144,3 +144,6 @@ C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\AutoMapper.dll
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\log4net.config
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\log4net.dll
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll

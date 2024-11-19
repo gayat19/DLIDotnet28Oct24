@@ -1,0 +1,12 @@
+INFO  04:48:52 Now listening on: http://localhost:5131
+INFO  04:48:52 Application started. Press Ctrl+C to shut down.
+INFO  04:48:52 Hosting environment: Development
+INFO  04:48:52 Content root path: C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  04:49:06 Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:49:06 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:49:06 5 Filter result
+INFO  04:49:06 Result of search - 5

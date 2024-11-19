@@ -13,6 +13,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Logging.AddLog4Net();
 
 #region Contexts
 builder.Services.AddDbContext<HRContext>(opts =>
@@ -33,6 +34,7 @@ builder.Services.AddAutoMapper(typeof(Employee));
 
 #region Services
 builder.Services.AddScoped<IDepartmentService, DepartmnetService>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 #endregion
 
 var app = builder.Build();
