@@ -1,0 +1,21 @@
+pubs ->
+Create end point for getting the books paginated
+we can select books by authors
+we can filter books by publishers
+we can select books by price
+The result could be sorted by author, publisher, book name, price
+in ascending or descending
+
+Northwind
+Create an endpoint for getting all the products with pagination
+filtered by supplier(array of supplier)
+filtered by unit price(range)
+filtered by category(array of category)
+filtered by packaging - array of packaging types)
+sorted by price, name, category in either ascending or descending
+
+Use database first approach
+Layered architecture is mandatory
+Unit testing is a must
+code coverage should be min 80%
+
