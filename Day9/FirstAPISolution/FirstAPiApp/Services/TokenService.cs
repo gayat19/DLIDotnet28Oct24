@@ -13,14 +13,15 @@ namespace FirstAPiApp.Services
         readonly byte[] _key;
         public TokenService(IConfiguration configuration)
         {
-            _key = Encoding.UTF8.GetBytes(configuration["TokenKey"].ToString());
+            _key = Encoding.UTF8.GetBytes(configuration["Keys:TokenKey"].ToString());
         }
 
         public async Task<string> GenerateToken(User user)
         {
             List<Claim> claims = new List<Claim>()
            {
-               new Claim(ClaimTypes.Email,user.Username)
+               new Claim(ClaimTypes.Email,user.Username),
+               new Claim(ClaimTypes.Role,user.Role.ToString())
            };
             var symmetricKey = new SymmetricSecurityKey(_key);
             var credentials = new SigningCredentials(symmetricKey,SecurityAlgorithms.HmacSha256); ;

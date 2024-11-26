@@ -20,9 +20,27 @@ namespace FirstAPiApp.Services
             _employeeRepository = employeeRepository;
             _tokenService = tokenService;
         }
-        public Task<LoginResponseDTO> LoginAsync(LoginRequestDTO loginRequestDTO)
+        public async Task<LoginResponseDTO> LoginAsync(LoginRequestDTO loginRequestDTO)
         {
-            throw new NotImplementedException();
+            var id = await GetIdFromEmail(loginRequestDTO.Username);
+            if(id==0)
+                throw new Exception("Not a valid user");
+            var user = await _userRepository.GetAsync(id);
+            if(user==null)
+                throw new Exception("Not a valid user");
+            HMACSHA256 hMACSHA256 = new HMACSHA256(user.HashKey);
+            var password = hMACSHA256.ComputeHash(Encoding.UTF8.GetBytes(loginRequestDTO.Password));
+            for (int i = 0; i < password.Length; i++)
+            {
+                if (password[i] != user.Password[i])
+                    throw new Exception("Not a valid user");
+            }
+            LoginResponseDTO responseDTO = new LoginResponseDTO()
+            {
+                Username = loginRequestDTO.Username,
+                Token = await _tokenService.GenerateToken(user)
+            };
+            return responseDTO;
         }
 
         public async Task<LoginResponseDTO> RegisterAsync(LoginRequestDTO loginRequestDTO)

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +19,16 @@
       "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\models\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\contexts\\hrcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\contexts\\hrcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|c:\\corp\\velveer\\participants\\day9\\firstapisolution\\firstapiapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,111 +54,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\TokenService.cs",
-              "RelativeToolTip": "FirstAPiApp\\Services\\TokenService.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAwwA8AAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T11:12:46.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ITokenService.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Interfaces\\ITokenService.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Interfaces\\ITokenService.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Interfaces\\ITokenService.cs",
-              "RelativeToolTip": "FirstAPiApp\\Interfaces\\ITokenService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T11:07:34.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\appsettings.json",
-              "RelativeDocumentMoniker": "FirstAPiApp\\appsettings.json",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\appsettings.json",
-              "RelativeToolTip": "FirstAPiApp\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-25T11:04:41.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\UserController.cs",
               "RelativeToolTip": "FirstAPiApp\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAeAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAkwCMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T10:56:24.196Z",
+              "WhenOpened": "2024-11-26T10:53:44.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginService.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\LoginService.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Services\\LoginService.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\LoginService.cs",
-              "RelativeToolTip": "FirstAPiApp\\Services\\LoginService.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAkwDAAAAANAAAA",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Models\\User.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\User.cs",
+              "RelativeToolTip": "FirstAPiApp\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T10:36:21.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ILoginService.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Interfaces\\ILoginService.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Interfaces\\ILoginService.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Interfaces\\ILoginService.cs",
-              "RelativeToolTip": "FirstAPiApp\\Interfaces\\ILoginService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T10:34:36.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Program.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Program.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Program.cs",
-              "RelativeToolTip": "FirstAPiApp\\Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T10:33:49.358Z",
+              "WhenOpened": "2024-11-26T10:51:23.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "FirstAPiApp\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAABoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T10:30:12.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "LoginResponseDTO.cs",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\DTOs\\LoginResponseDTO.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Models\\DTOs\\LoginResponseDTO.cs",
@@ -174,33 +88,85 @@
               "RelativeToolTip": "FirstAPiApp\\Models\\DTOs\\LoginResponseDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T10:29:05.468Z",
+              "WhenOpened": "2024-11-26T10:51:07.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "FirstAPiApp\\Models\\User.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\User.cs",
-              "RelativeToolTip": "FirstAPiApp\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
+              "DocumentIndex": 4,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Services\\LoginService.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\LoginService.cs",
+              "RelativeToolTip": "FirstAPiApp\\Services\\LoginService.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAIwBUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T10:24:07.174Z",
+              "WhenOpened": "2024-11-26T10:45:48.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "FirstAPiApp\\Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T10:35:59.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "HRContext.cs",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Contexts\\HRContext.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Contexts\\HRContext.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Contexts\\HRContext.cs",
               "RelativeToolTip": "FirstAPiApp\\Contexts\\HRContext.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAgwA4AAAApAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA1wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T10:22:13.075Z",
+              "WhenOpened": "2024-11-26T10:35:45.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\TokenService.cs",
+              "RelativeToolTip": "FirstAPiApp\\Services\\TokenService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA1wBcAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T10:27:52.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\appsettings.json",
+              "RelativeDocumentMoniker": "FirstAPiApp\\appsettings.json",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\appsettings.json",
+              "RelativeToolTip": "FirstAPiApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-26T10:17:44.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Program.cs",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Program.cs",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Program.cs",
+              "RelativeToolTip": "FirstAPiApp\\Program.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAADwvxMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T10:10:33.356Z",
               "EditorCaption": ""
             }
           ]

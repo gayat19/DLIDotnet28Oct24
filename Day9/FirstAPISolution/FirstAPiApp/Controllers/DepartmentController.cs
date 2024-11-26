@@ -3,6 +3,7 @@ using FirstAPiApp.Models;
 using FirstAPiApp.Models.DTOs;
 using FirstAPiApp.Repositories;
 using FirstAPiApp.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace FirstAPiApp.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<ICollection<DepartmentEmployessResponseDTO>>> Get()
         {
             try

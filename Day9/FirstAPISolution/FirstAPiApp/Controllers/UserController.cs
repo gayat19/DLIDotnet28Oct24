@@ -30,5 +30,29 @@ namespace FirstAPiApp.Controllers
                 });
             return Ok(result);
         }
+        [HttpPost]
+        [Route("Login")]
+        public async Task<ActionResult<LoginResponseDTO>> Login(LoginRequestDTO loginRequestDTO)
+        {
+            var result = await _loginService.LoginAsync(loginRequestDTO); 
+           try
+            {
+                if (result == null)
+                    return BadRequest(new ErrorObject
+                    {
+                        ErrorCode = 500,
+                        Message = "Unable to register at this moment"
+                    });
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Unauthorized(new ErrorObject
+                {
+                    ErrorCode = 500,
+                    Message = "UnAuthorizec"
+                });
+            }
+        }
     }
 }
