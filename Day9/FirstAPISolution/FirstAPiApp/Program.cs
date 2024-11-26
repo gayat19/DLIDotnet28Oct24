@@ -25,6 +25,7 @@ builder.Services.AddDbContext<HRContext>(opts =>
 #region Repositories
     builder.Services.AddScoped<IRepository<int,Department>,DepartmentRepository>();
     builder.Services.AddScoped<IRepository<int,Employee>,EmployeeRepository>();
+    builder.Services.AddScoped<IRepository<int,User>,UserRepository>();
 #endregion
 
 #region Mappers
@@ -35,6 +36,8 @@ builder.Services.AddAutoMapper(typeof(Employee));
 #region Services
 builder.Services.AddScoped<IDepartmentService, DepartmnetService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 #endregion
 
 var app = builder.Build();

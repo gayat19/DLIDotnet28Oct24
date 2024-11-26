@@ -10,3 +10,67 @@ SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
 FROM [Employees] AS [e]
 INFO  04:49:06 5 Filter result
 INFO  04:49:06 Result of search - 5
+INFO  03:57:41 Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+INFO  03:57:41 Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+INFO  03:57:41 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+INFO  03:57:41 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+INFO  03:57:41 Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+INFO  03:57:41 Applying migration '20241125102653_UserCred'.
+INFO  03:57:41 Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL,
+    [Username] nvarchar(max) NOT NULL,
+    [Password] varbinary(max) NOT NULL,
+    [HashKey] varbinary(max) NOT NULL,
+    [Role] int NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_User_Employee] FOREIGN KEY ([Id]) REFERENCES [Employees] ([Id]) ON DELETE NO ACTION
+);
+INFO  03:57:41 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241125102653_UserCred', N'8.0.11');
+INFO  04:29:59 Now listening on: http://localhost:5131
+INFO  04:29:59 Application started. Press Ctrl+C to shut down.
+INFO  04:29:59 Hosting environment: Development
+INFO  04:29:59 Content root path: C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  04:31:16 Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:31:16 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:31:17 Executed DbCommand (77ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 8000) (DbType = Binary), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [HashKey], [Password], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+INFO  04:56:04 Now listening on: http://localhost:5131
+INFO  04:56:04 Application started. Press Ctrl+C to shut down.
+INFO  04:56:04 Hosting environment: Development
+INFO  04:56:04 Content root path: C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  04:57:24 Now listening on: http://localhost:5131
+INFO  04:57:24 Application started. Press Ctrl+C to shut down.
+INFO  04:57:24 Hosting environment: Development
+INFO  04:57:24 Content root path: C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  02:44:45 Now listening on: http://localhost:5131
+INFO  02:44:45 Application started. Press Ctrl+C to shut down.
+INFO  02:44:45 Hosting environment: Development
+INFO  02:44:45 Content root path: C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  02:45:29 Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  02:45:29 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  02:45:30 Executed DbCommand (74ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 8000) (DbType = Binary), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [HashKey], [Password], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4);

@@ -107,6 +107,31 @@ namespace FirstAPiApp.Migrations
                         });
                 });
 
+            modelBuilder.Entity("FirstAPiApp.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("HashKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("Password")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("FirstAPiApp.Models.Employee", b =>
                 {
                     b.HasOne("FirstAPiApp.Models.Department", "Department")
@@ -116,9 +141,27 @@ namespace FirstAPiApp.Migrations
                     b.Navigation("Department");
                 });
 
+            modelBuilder.Entity("FirstAPiApp.Models.User", b =>
+                {
+                    b.HasOne("FirstAPiApp.Models.Employee", "Employee")
+                        .WithOne("User")
+                        .HasForeignKey("FirstAPiApp.Models.User", "Id")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_User_Employee");
+
+                    b.Navigation("Employee");
+                });
+
             modelBuilder.Entity("FirstAPiApp.Models.Department", b =>
                 {
                     b.Navigation("Employees");
+                });
+
+            modelBuilder.Entity("FirstAPiApp.Models.Employee", b =>
+                {
+                    b.Navigation("User")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

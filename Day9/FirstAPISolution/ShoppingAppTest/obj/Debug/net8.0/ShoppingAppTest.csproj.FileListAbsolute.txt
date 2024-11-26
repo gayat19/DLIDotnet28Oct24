@@ -160,3 +160,6 @@ C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\Castle.Core.dll
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\Moq.dll
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\log4net.config
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\log4net.dll
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\ShoppingAppTest\bin\Debug\net8.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll

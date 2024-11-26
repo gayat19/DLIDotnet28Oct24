@@ -1,0 +1,19 @@
+End point for employees-> List the employees
+
+Paginate
+  page number, no of records
+
+Filters
+  employee name: - contains -> FN or the LN
+  employee email  - contains
+  department id
+
+Sort
+ Name - FN
+ email
+ department id
+
+FirstAPiApp.Services.EmployeeService: Information: 5 Filter result
+FirstAPiApp.Controllers.EmployeeSerchController: Information: Result of search - 5
+
+

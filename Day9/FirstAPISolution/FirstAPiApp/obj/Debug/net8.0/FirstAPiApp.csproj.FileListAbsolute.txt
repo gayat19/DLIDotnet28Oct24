@@ -147,3 +147,4 @@ C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\log4net.config
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\log4net.dll
 C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
