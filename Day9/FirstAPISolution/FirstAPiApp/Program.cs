@@ -1,5 +1,6 @@
 using FirstAPiApp.Contexts;
 using FirstAPiApp.Interfaces;
+using FirstAPiApp.Misc;
 using FirstAPiApp.Models;
 using FirstAPiApp.Repositories;
 using FirstAPiApp.Services;
@@ -61,7 +62,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 #endregion
 
-
+#region CustomFilters
+builder.Services.AddScoped<CustomExceptionFilter>();
+#endregion
 #region Contexts
 builder.Services.AddDbContext<HRContext>(opts =>
 {

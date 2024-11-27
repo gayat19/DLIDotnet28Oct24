@@ -1,4 +1,5 @@
 ﻿using FirstAPiApp.Interfaces;
+using FirstAPiApp.Misc;
 using FirstAPiApp.Models;
 using FirstAPiApp.Models.DTOs;
 using FirstAPiApp.Services;
@@ -9,6 +10,7 @@ namespace FirstAPiApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [CustomExceptionFilter]
     public class UserController : ControllerBase
     {
         private readonly ILoginService _loginService;
@@ -35,8 +37,8 @@ namespace FirstAPiApp.Controllers
         public async Task<ActionResult<LoginResponseDTO>> Login(LoginRequestDTO loginRequestDTO)
         {
             var result = await _loginService.LoginAsync(loginRequestDTO); 
-           try
-            {
+           //try
+           // {
                 if (result == null)
                     return BadRequest(new ErrorObject
                     {
@@ -44,15 +46,15 @@ namespace FirstAPiApp.Controllers
                         Message = "Unable to register at this moment"
                     });
                 return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return Unauthorized(new ErrorObject
-                {
-                    ErrorCode = 500,
-                    Message = "UnAuthorizec"
-                });
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    return Unauthorized(new ErrorObject
+            //    {
+            //        ErrorCode = 500,
+            //        Message = "UnAuthorizec"
+            //    });
+            //}
         }
     }
 }

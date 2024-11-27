@@ -6,6 +6,8 @@ namespace FirstAPiApp.Repositories
 {
     public class EmployeeRepository : Repository<int, Employee>
     {
+       
+
         public EmployeeRepository(HRContext context):base(context)
         {
             

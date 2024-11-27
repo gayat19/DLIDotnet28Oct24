@@ -24,15 +24,15 @@ namespace FirstAPiApp.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<ActionResult<ICollection<DepartmentEmployessResponseDTO>>> Get()
         {
-            try
-            {
+            //try
+            //{
                 var departments = await _departmentService.GetDepartmnetsWithEmployees();
                 return Ok(departments);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new ErrorObject { ErrorCode=400,Message=ex.Message});
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    return BadRequest(new ErrorObject { ErrorCode=400,Message=ex.Message});
+            //}
         }
     }
 }
