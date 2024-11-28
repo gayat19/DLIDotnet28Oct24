@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="post" action="EmployeeTable.html">
+           <table>
+            <tr>
+                <td>
+                    <label  for="txtEmployeeName">Employee Name</label>
+                </td>
+                <td>
+                    <input required type="text" id="txtEmployeeName" placeholder="employee name"/>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <label for="txtEmployeeAge">Employee Age</label>
+                </td>
+                <td>
+                    <input min="18" max="56" type="number" id="txtEmployeeAge" placeholder="employee age"/>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="txtEmployeeFavColor">Employee T.Shirt Color</label>
+                    </td>
+                    <td>
+                        <input type="color" id="txtEmployeeFavColor" placeholder="employee age"/>
+                    </td>
+                </tr>
+                <tr>
+
+                </tr>
+                    <td>
+                        <label>Employee Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" checked name="grpGender"/>Male
+                        <br/>
+                        <input type="radio" name="grpGender"/>Female
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td>
+                    <label>Employee Education</label>
+                </td>
+                <td>
+                    <input type="checkbox" checked />UG
+                    <br/>
+                    <input type="checkbox" />PG
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Employee City</label>
+                </td>
+                <td>
+                    <select>
+                        <option>Kochi</option>
+                        <option selected>Chennai</option>
+                        <option>Delhi</option>
+                    </select>
+                </td>
+            
+            <tr>
+                <td>
+                    <label>Employee Country</label>
+                </td>
+                <td>
+                    <input list="lstCountry"/>
+                    <datalist id="lstCountry">
+                        <option>India</option>
+                        <option selected>USA</option>
+                        <option>London</option>
+                    </datalist>
+                </td>
+            </tr>
+        </tr>
+            <tr>
+                <td>
+                    <label>Employee Picture</label>
+                </td>
+                <td>
+                    <input required type="file"/>
+                </td>
+            </tr>
+                <tr>
+                <td>
+                    <input type="submit">
+                </td>
+                <td>
+                    <input type="reset"/>
+                </td>
+            </tr>
+           </table>
+        </form>
+    </body>
+</html>

@@ -84,7 +84,7 @@
               "RelativeDocumentMoniker": "FirstAPiApp\\Misc\\CustomExceptionFilter.cs",
               "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Misc\\CustomExceptionFilter.cs",
               "RelativeToolTip": "FirstAPiApp\\Misc\\CustomExceptionFilter.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAA3AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAoAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T11:16:18.802Z",
               "EditorCaption": ""
@@ -99,8 +99,7 @@
               "RelativeToolTip": "FirstAPiApp\\Repositories\\EmployeeRepository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:07:09.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T11:07:09.466Z"
             },
             {
               "$type": "Document",
@@ -112,8 +111,7 @@
               "RelativeToolTip": "FirstAPiApp\\Services\\EmployeeService.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwBIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:38:27.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T10:38:27.584Z"
             },
             {
               "$type": "Document",
@@ -125,8 +123,7 @@
               "RelativeToolTip": "FirstAPiApp\\Misc\\UsernameValidator.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAABUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:36:26.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T10:36:26.677Z"
             },
             {
               "$type": "Document",
@@ -138,8 +135,7 @@
               "RelativeToolTip": "FirstAPiApp\\Models\\DTOs\\LoginRequestDTO.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:28:44.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T10:28:44.635Z"
             },
             {
               "$type": "Document",
@@ -175,8 +171,7 @@
               "RelativeToolTip": "FirstAPiApp\\Program.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAAAEEAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T10:10:33.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T10:10:33.356Z"
             },
             {
               "$type": "Document",
@@ -188,8 +183,7 @@
               "RelativeToolTip": "FirstAPiApp\\Controllers\\UserController.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAkwDgAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T10:53:44.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T10:53:44.811Z"
             },
             {
               "$type": "Document",
@@ -201,8 +195,7 @@
               "RelativeToolTip": "FirstAPiApp\\Controllers\\EmployeeController.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAzwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:13:32.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T11:13:32.724Z"
             },
             {
               "$type": "Document",
@@ -214,8 +207,7 @@
               "RelativeToolTip": "FirstAPiApp\\Controllers\\EmployeeSerchController.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:13:41.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T11:13:41.871Z"
             },
             {
               "$type": "Document",
@@ -227,8 +219,7 @@
               "RelativeToolTip": "FirstAPiApp\\Controllers\\DepartmentController.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwB0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T10:35:59.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T10:35:59.992Z"
             },
             {
               "$type": "Document",
@@ -264,8 +255,7 @@
               "RelativeToolTip": "FirstAPiApp\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAB2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-26T10:17:44.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T10:17:44.779Z"
             }
           ]
         }
