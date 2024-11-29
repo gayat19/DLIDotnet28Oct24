@@ -2,10 +2,35 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            img{
+                opacity: .5;
+            }
+            #img1{
+                position: absolute;
+                left: 20px;
+                top:20px;
+                z-index:1;
+            }
+            #img2{
+                position: absolute;
+                left: 30px;
+                top:30px;
+                z-index:2;
+            }
+            #img3{
+                position: absolute;
+                left: 40px;
+                top: 40px;
+                z-index:3;
+            }
+        </style>
     </head>
     <body>
         <figure>
-            <img src="./asserts/images/logo.jpg" height="100" width="100"/> 
+            <img id="img1" src="./asserts/images/logo.jpg" height="100" width="100"/> 
+            <img id="img2" src="./asserts/images/logo.jpg" height="100" width="100"/> 
+            <img id="img3" src="./asserts/images/logo.jpg" height="100" width="100"/> 
             <figcaption>Company Name</figcaption>
         </figure>
         <nav>
