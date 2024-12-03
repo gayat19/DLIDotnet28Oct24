@@ -46,6 +46,15 @@ builder.Services.AddSwaggerGen(option =>
         });
 builder.Logging.AddLog4Net();
 
+#region CORS
+builder.Services.AddCors(builder => builder.AddPolicy("AllowAll", opts =>
+{
+    opts.AllowAnyOrigin();
+    opts.AllowAnyMethod();
+    opts.AllowAnyHeader();
+}));
+#endregion
+
 #region Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(opts =>
@@ -100,6 +109,8 @@ if (app.Environment.IsDevelopment())
 }
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseCors("AllowAll");
 
 app.MapControllers();
 

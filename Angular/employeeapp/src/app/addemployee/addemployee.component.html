@@ -1,0 +1,13 @@
+<div>
+    <label>Employee Name</label>
+    <input type="text" [value]="empname" #ename (change)="changeName(ename.value)"/>
+    <input type="text" [(ngModel)]="empname"/>
+
+    <div [class]="className">
+        The employee name is {{empname}}
+    </div>
+    <i (click)="toggle()" [class]="favClass"></i>
+   
+    <button (click)="changeClass('err')">Error</button>
+    <button (click)="changeClass('good')">All Good</button>
+</div>

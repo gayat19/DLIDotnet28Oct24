@@ -1,0 +1,25 @@
+
+
+<div>
+    <h2>Employees</h2>
+    <button (click)="getEmployees()">Get Employees</button>
+    <table *ngIf="employees.length>0 else nodata" border="1" >
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.id}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <ng-template #nodata>
+        <p>No data available</p>
+    </ng-template>
+</div>
