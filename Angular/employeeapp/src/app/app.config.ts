@@ -5,9 +5,11 @@ import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { EmployeeService } from '../Services/Employee.service';
 import { provideHttpClient } from '@angular/common/http';
+import { EmployeeCurdService } from '../Services/employeeCURD.service';
+import { ProductService } from '../Services/product.service';
 
 export const appConfig: ApplicationConfig = {
-  providers: [EmployeeService, 
+  providers: [EmployeeService, EmployeeCurdService,ProductService,
     provideZoneChangeDetection({ eventCoalescing: true }),
      provideRouter(routes), provideClientHydration(withEventReplay())
     ,provideHttpClient()]

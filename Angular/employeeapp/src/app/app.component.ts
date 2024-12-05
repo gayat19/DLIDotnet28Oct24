@@ -4,10 +4,15 @@ import { FirstComponent } from './first/first.component';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
 
 import { EmployeesComponent } from './employees/employees.component';
+import { ListEmployeeComponent } from './list-employee/list-employee.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
+import { ProductsComponent } from './products/products.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FirstComponent,AddemployeeComponent,EmployeesComponent],
+  imports: [ProductsComponent, DeleteEmployeeComponent , AddEmployeeComponent,ListEmployeeComponent,EditEmployeeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

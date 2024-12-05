@@ -1,0 +1,11 @@
+<div>
+    <label class="form-control">Select an Employee to delete</label>
+    <select class="form-control" #eid (change)="selectEmployee(eid.value)">
+        <option value="">Select Employee</option>
+        <option *ngFor="let employee of employees" [value]="employee.id">{{employee.name}}</option>
+
+    </select>
+   <app-employee-detail [enabled]="false" [employee]="employee"></app-employee-detail>
+    <button class="btn btn-primary" (click)="deleteEmployee()">Delete</button>
+<br/>
+</div>  

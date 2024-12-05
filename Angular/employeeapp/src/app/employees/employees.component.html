@@ -3,7 +3,7 @@
 <div>
     <h2>Employees</h2>
     <button (click)="getEmployees()">Get Employees</button>
-    <table *ngIf="employees.length>0 else nodata" border="1" >
+    <table *ngIf="employees.length>0 else nodata"  border="1" >
         <thead>
             <tr>
                 <th>Id</th>
@@ -23,3 +23,5 @@
         <p>No data available</p>
     </ng-template>
 </div>
+
+<!-- [hidden]="employees.length==0" -->

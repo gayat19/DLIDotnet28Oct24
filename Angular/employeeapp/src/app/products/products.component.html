@@ -1,0 +1,32 @@
+<div>
+    <h2>Cart</h2>
+    <div *ngIf="cart.length>0 else empty">
+        <table class="table">
+            <tr  *ngFor="let product of cart">
+                <td><img height="100" width="100" [src]="product.img"/></td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.quantity}}</td>
+                <td>{{product.price*product.quantity}}</td>
+            </tr>
+            <tr>
+                <td colspan="4">Total</td>
+                <td>{{total}}</td>
+            </tr>
+        </table >  
+    </div>
+    <ng-template #empty>
+        <p class="alert alert-danger">Cart is empty</p>
+    </ng-template>
+</div>
+<hr/>
+<div *ngIf="products.length>0 else loading">
+    <div class="inner" *ngFor="let product of products">
+        <app-product (addToCart)="handleAddToCart($event)" [product]="product" ></app-product>
+    </div>
+</div>
+<ng-template #loading>
+    <div class="spinner-border" role="status">
+        <span class="sr-only"></span>
+    </div>
+</ng-template>

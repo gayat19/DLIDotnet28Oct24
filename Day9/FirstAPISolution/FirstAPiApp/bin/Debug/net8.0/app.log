@@ -876,3 +876,29 @@ FROM [Employees] AS [e]
 INFO  04:42:21 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
 FROM [Employees] AS [e]
+INFO  03:35:11 Now listening on: http://localhost:5131
+INFO  03:35:11 Application started. Press Ctrl+C to shut down.
+INFO  03:35:11 Hosting environment: Development
+INFO  03:35:11 Content root path: D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  03:35:48 Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  03:35:48 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  03:38:04 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  03:38:04 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  03:38:49 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  03:38:49 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  12:12:12 Now listening on: http://localhost:5131
+INFO  12:12:12 Application started. Press Ctrl+C to shut down.
+INFO  12:12:12 Hosting environment: Development
+INFO  12:12:12 Content root path: D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp
