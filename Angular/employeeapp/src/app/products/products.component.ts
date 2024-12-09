@@ -23,7 +23,7 @@ export class ProductsComponent {
                     });
   }
   handleAddToCart(ci:any){
-    console.log(ci)
+
    
      let index=this.cart.findIndex((c)=>c.id===ci.id);
      if(index===-1){

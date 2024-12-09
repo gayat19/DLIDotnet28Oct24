@@ -1,0 +1,24 @@
+<div>
+    <h1>Login</h1>
+    <section #userdata class="userlogin">
+        <label class="form-control" for="username">Username</label>
+        <input class="form-control" type="text"  id="username" 
+        [(ngModel)]="user.username" 
+        #username="ngModel" required minlength="5">
+        <div *ngIf="!username.valid && username.touched" class="alert alert-danger">
+          {{ username.errors??['required']??['required']?'Username is manditory':'' }}
+          {{username.errors??['minlength']??['minlength']?'blah':''    }}
+        </div>
+        <label class="form-control" for="username">Password</label>
+        <input class="form-control" type="password"  
+        name="password" [(ngModel)]="user.password" #password="ngModel" required>
+        <div *ngIf="!password.valid && password.touched" class="alert alert-danger">
+          {{ password.errors??['required']?'Password is manditory':'' }}
+        </div>
+        
+        <button
+            [disabled]="!username.valid || !password.valid" 
+        class="btn btn-primary" (click)="login(username,password)">Login</button>
+        <button class="btn btn-danger" (click)="reset()">Reset</button>
+    </section>
+</div>
