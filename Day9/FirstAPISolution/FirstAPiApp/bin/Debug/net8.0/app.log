@@ -620,3 +620,285 @@ FROM [Employees] AS [e]
 INFO  04:52:48 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
 FROM [Employees] AS [e]
+INFO  03:32:01 Now listening on: http://localhost:5131
+INFO  03:32:01 Application started. Press Ctrl+C to shut down.
+INFO  03:32:01 Hosting environment: Development
+INFO  03:32:01 Content root path: D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  03:58:04 Executed DbCommand (726ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [dbHRApp];
+INFO  03:58:04 Executed DbCommand (141ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [dbHRApp] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+INFO  03:58:04 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+INFO  03:58:04 Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+INFO  03:58:04 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+INFO  03:58:04 Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+INFO  03:58:04 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+INFO  03:58:04 Applying migration '20241113102338_init'.
+INFO  03:58:04 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Departments] (
+    [DepartmentId] int NOT NULL IDENTITY,
+    [DepartmentName] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Departments] PRIMARY KEY ([DepartmentId])
+);
+INFO  03:58:04 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Employees] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [DepartmentId] int NULL,
+    CONSTRAINT [PK_Employees] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Employees_Departments_DepartmentId] FOREIGN KEY ([DepartmentId]) REFERENCES [Departments] ([DepartmentId])
+);
+INFO  03:58:04 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Employees_DepartmentId] ON [Employees] ([DepartmentId]);
+INFO  03:58:04 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241113102338_init', N'8.0.11');
+INFO  03:58:04 Applying migration '20241113104244_seed'.
+INFO  03:58:04 Executed DbCommand (219ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'DepartmentId', N'DepartmentName') AND [object_id] = OBJECT_ID(N'[Departments]'))
+    SET IDENTITY_INSERT [Departments] ON;
+INSERT INTO [Departments] ([DepartmentId], [DepartmentName])
+VALUES (1, N'HR'),
+(2, N'Admin');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'DepartmentId', N'DepartmentName') AND [object_id] = OBJECT_ID(N'[Departments]'))
+    SET IDENTITY_INSERT [Departments] OFF;
+INFO  03:58:05 Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'DepartmentId', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] ON;
+INSERT INTO [Employees] ([Id], [DepartmentId], [Email], [Name])
+VALUES (101, 1, N'ramu@mycompany.com', N'Ramu'),
+(102, 2, N'somu@mycompany.com', N'Somu'),
+(103, 2, N'bimu@mycompany.com', N'Bimu'),
+(104, 2, N'komu@mycompany.com', N'Komu');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'DepartmentId', N'Email', N'Name') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] OFF;
+INFO  03:58:05 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241113104244_seed', N'8.0.11');
+INFO  03:58:05 Applying migration '20241125102653_UserCred'.
+INFO  03:58:05 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL,
+    [Username] nvarchar(max) NOT NULL,
+    [Password] varbinary(max) NOT NULL,
+    [HashKey] varbinary(max) NOT NULL,
+    [Role] int NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_User_Employee] FOREIGN KEY ([Id]) REFERENCES [Employees] ([Id]) ON DELETE NO ACTION
+);
+INFO  03:58:05 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241125102653_UserCred', N'8.0.11');
+INFO  03:58:18 Now listening on: http://localhost:5131
+INFO  03:58:18 Application started. Press Ctrl+C to shut down.
+INFO  03:58:18 Hosting environment: Development
+INFO  03:58:18 Content root path: D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  03:58:56 Executed DbCommand (87ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  03:58:56 Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  03:58:56 0 Filter result
+INFO  03:58:56 Result of search - 0
+INFO  04:00:15 Now listening on: http://localhost:5131
+INFO  04:00:15 Application started. Press Ctrl+C to shut down.
+INFO  04:00:15 Hosting environment: Development
+INFO  04:00:15 Content root path: D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  04:01:43 Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:01:43 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:01:43 0 Filter result
+INFO  04:01:43 Result of search - 0
+INFO  04:01:57 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:01:57 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:01:57 4 Filter result
+INFO  04:01:57 Result of search - 4
+INFO  04:05:52 Now listening on: http://localhost:5131
+INFO  04:05:52 Application started. Press Ctrl+C to shut down.
+INFO  04:05:52 Hosting environment: Development
+INFO  04:05:52 Content root path: D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  04:17:45 Now listening on: http://localhost:5131
+INFO  04:17:45 Application started. Press Ctrl+C to shut down.
+INFO  04:17:45 Hosting environment: Development
+INFO  04:17:45 Content root path: D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  04:17:52 Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:17:52 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:24:23 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:24:23 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:24:23 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:24:23 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:24:51 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:24:51 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:24:51 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:24:51 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:24:53 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:24:53 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:24:53 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:24:53 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:25:30 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:25:30 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:25:51 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:25:51 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:25:51 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:25:51 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:25:55 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:25:55 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:25:55 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:25:55 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:25:59 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:25:59 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:25:59 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:25:59 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:26:01 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:26:01 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:26:01 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:26:01 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:27:21 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:27:21 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:27:21 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:27:21 Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:37:18 Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:37:18 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:38:22 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:38:22 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:40:02 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:40:02 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  04:42:21 Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:42:21 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  03:35:11 Now listening on: http://localhost:5131
+INFO  03:35:11 Application started. Press Ctrl+C to shut down.
+INFO  03:35:11 Hosting environment: Development
+INFO  03:35:11 Content root path: D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  03:35:48 Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  03:35:48 Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  03:38:04 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  03:38:04 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  03:38:49 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  03:38:49 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]
+INFO  12:12:12 Now listening on: http://localhost:5131
+INFO  12:12:12 Application started. Press Ctrl+C to shut down.
+INFO  12:12:12 Hosting environment: Development
+INFO  12:12:12 Content root path: D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp

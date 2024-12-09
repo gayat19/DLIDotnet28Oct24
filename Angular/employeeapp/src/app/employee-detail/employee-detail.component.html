@@ -1,0 +1,4 @@
+<label class="form-control" for="name">Name</label>
+<input [disabled]="!enabled" class="form-control" type="text" (onchange)="changeEventEmit()" id="name" name="name" [(ngModel)]="employee.name" required>
+<label class="form-control" for="email">Email</label>
+<input [disabled]="!enabled" class="form-control" type="text" id="email" name="email" (onchange)="changeEventEmit()" [(ngModel)]="employee.email" required>

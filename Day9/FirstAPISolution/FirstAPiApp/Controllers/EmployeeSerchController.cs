@@ -2,6 +2,7 @@
 using FirstAPiApp.Models;
 using FirstAPiApp.Models.DTOs;
 using FirstAPiApp.Services;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace FirstAPiApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAll")]
     public class EmployeeSerchController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;

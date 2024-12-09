@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+  
+    <img class="card-img-top imgsize" [src]="product.thumbnail" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{product.title  | uppercase}}</h5>
+      <p class="card-text">{{product.description | test:'25'}}</p>
+      <button (click)="handleButtonClick()"  class="btn btn-primary">Buy for {{product.price | currency:'INR'}}</button>
+    </div>
+ </div>

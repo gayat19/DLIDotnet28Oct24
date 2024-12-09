@@ -1,0 +1,10 @@
+<div>
+    <h2>New Employee</h2>
+    <label class="form-control" for="id">Id</label>
+    <input class="form-control" type="number" id="id" name="id" [(ngModel)]="employee.id" required>
+    <label class="form-control" for="name">Name</label>
+    <input class="form-control" type="text" id="name" name="name" [(ngModel)]="employee.name" required>
+    <label class="form-control" for="email">Email</label>
+    <input class="form-control" type="text" id="email" name="email" [(ngModel)]="employee.email" required>
+    <button class="btn btn-primary" (click)="addEmployee()">Add</button>
+</div>
