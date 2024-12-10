@@ -1,0 +1,15 @@
+<p>department works!</p>
+<button class="btn btn-success" (click)="getData()">Get Data</button>
+<div *ngIf="employeeDepartments.length>0">
+    <div *ngFor="let d of employeeDepartments">
+        Department Id : {{d.departmentId}}
+        <br/>
+        Deparyment Name : {{d.departmentName}}
+        <div *ngIf="d.employees.length>0">
+            <div *ngFor="let e of d.employees">
+                {{e.id}} - {{e.name}}
+            </div>
+        </div>
+        <hr/>
+    </div>
+</div>

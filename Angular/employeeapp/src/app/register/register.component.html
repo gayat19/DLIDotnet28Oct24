@@ -1,0 +1,13 @@
+<form [formGroup]="userForm" (ngSubmit)="addUser()">
+    <label class="form-control">Username</label>
+    <input class="form-control" type="text" formControlName="username"/>
+    <div *ngIf="!un.valid && un.touched">
+        Username cannot be empty
+    </div>
+    <label class="form-control">Password</label>
+    <input class="form-control" type="text" formControlName="password"/>
+    <div *ngIf="!pass.valid && pass.touched">
+        password cannot be empty
+    </div>
+    <input type="submit" value="Register"/>
+</form>

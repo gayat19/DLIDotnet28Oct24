@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\ShoppingAppTest.csproj": {}
+    "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\ShoppingAppTest.csproj": {}
   },
   "projects": {
-    "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\FirstAPiApp.csproj": {
+    "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\FirstAPiApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\FirstAPiApp.csproj",
+        "projectUniqueName": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\FirstAPiApp.csproj",
         "projectName": "FirstAPiApp",
-        "projectPath": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\FirstAPiApp.csproj",
-        "packagesPath": "C:\\Users\\gayat\\.nuget\\packages\\",
-        "outputPath": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\obj\\",
+        "projectPath": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\FirstAPiApp.csproj",
+        "packagesPath": "C:\\Users\\Gayathri Mahadevan\\.nuget\\packages\\",
+        "outputPath": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gayat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gayathri Mahadevan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -96,24 +97,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\ShoppingAppTest.csproj": {
+    "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\ShoppingAppTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\ShoppingAppTest.csproj",
+        "projectUniqueName": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\ShoppingAppTest.csproj",
         "projectName": "ShoppingAppTest",
-        "projectPath": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\ShoppingAppTest.csproj",
-        "packagesPath": "C:\\Users\\gayat\\.nuget\\packages\\",
-        "outputPath": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\obj\\",
+        "projectPath": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\ShoppingAppTest.csproj",
+        "packagesPath": "C:\\Users\\Gayathri Mahadevan\\.nuget\\packages\\",
+        "outputPath": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\ShoppingAppTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gayat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gayathri Mahadevan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -129,8 +130,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\FirstAPiApp.csproj": {
-                "projectPath": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\FirstAPiApp.csproj"
+              "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\FirstAPiApp.csproj": {
+                "projectPath": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\FirstAPiApp.csproj"
               }
             }
           }
@@ -144,7 +145,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -195,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

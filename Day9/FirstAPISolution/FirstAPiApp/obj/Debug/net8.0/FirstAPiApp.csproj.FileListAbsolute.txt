@@ -298,3 +298,7 @@ D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp\obj\Debug\net8.0\
 D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp\obj\Debug\net8.0\FirstAPi.692CFA28.Up2Date
 D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp\obj\Debug\net8.0\FirstAPiApp.genruntimeconfig.cache
 D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp\obj\Debug\net8.0\ref\FirstAPiApp.dll
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\bin\Debug\net8.0\FirstAPiApp.staticwebassets.endpoints.json
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\obj\Debug\net8.0\staticwebassets\msbuild.FirstAPiApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

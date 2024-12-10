@@ -10,10 +10,12 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
 import { ProductsComponent } from './products/products.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { DepartmentComponent } from './department/department.component';
 
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent, ProductsComponent, DeleteEmployeeComponent , AddEmployeeComponent,ListEmployeeComponent,EditEmployeeComponent],
+  imports: [DepartmentComponent, RegisterComponent, LoginComponent, ProductsComponent, DeleteEmployeeComponent , AddEmployeeComponent,ListEmployeeComponent,EditEmployeeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

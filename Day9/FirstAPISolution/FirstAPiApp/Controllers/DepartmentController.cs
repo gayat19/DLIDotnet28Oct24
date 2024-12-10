@@ -4,6 +4,7 @@ using FirstAPiApp.Models.DTOs;
 using FirstAPiApp.Repositories;
 using FirstAPiApp.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,7 @@ namespace FirstAPiApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAll")]
     public class DepartmentController : ControllerBase
     {
         private readonly IDepartmentService _departmentService;
@@ -21,7 +23,7 @@ namespace FirstAPiApp.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         public async Task<ActionResult<ICollection<DepartmentEmployessResponseDTO>>> Get()
         {
             //try
