@@ -1,18 +1,34 @@
-import { JsonPipe, NgIf } from '@angular/common';
+import { JsonPipe, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { CheckboxControlValueAccessor, FormsModule } from '@angular/forms';
 import { User } from '../models/user';
 import { LoginService } from '../../Services/Login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  imports: [FormsModule,NgIf],
+  imports: [FormsModule,NgIf,NgFor],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
   user:User= new User();
-  constructor(private loginService:LoginService){
+  toasts:{id:number,message:string}[] =[];
+  toastId =0;
+  showToast(message:string){
+    const toast={id :++this.toastId,message};
+    this.toasts.push(toast);
+    setTimeout(()=>{
+      this.removeToast(toast)
+      if(message=="Login success")
+        this.router.navigate(['/department'])
+    },2000)
+  }
+  removeToast(toast:{id:number,message:string})
+  {
+    this.toasts = this.toasts.filter(t=>t.id != toast.id)
+  }
+  constructor(private loginService:LoginService,private router:Router){
 
   }
   login(un:any,pwd:any){
@@ -21,7 +37,9 @@ export class LoginComponent {
       this.loginService.login(this.user).subscribe(
         {
           next:(data:any)=>{
-            alert("Login success");
+           // alert("Login success");
+            this.showToast("Login success");
+           // this.router.navigate(['/department'])
             sessionStorage.setItem("token",data.token);
           },
           error:(err)=>{

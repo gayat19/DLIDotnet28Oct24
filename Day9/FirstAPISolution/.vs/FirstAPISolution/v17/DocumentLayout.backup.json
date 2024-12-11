@@ -94,8 +94,7 @@
               "RelativeToolTip": "FirstAPiApp\\Models\\DTOs\\LoginRequestDTO.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:28:44.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T10:28:44.635Z"
             },
             {
               "$type": "Document",
@@ -115,9 +114,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Program.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Program.cs",
-              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Program.cs*",
-              "RelativeToolTip": "FirstAPiApp\\Program.cs*",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAAAG0AAAAYAAAAAAAAAA==",
+              "ToolTip": "C:\\Corp\\Velveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Program.cs",
+              "RelativeToolTip": "FirstAPiApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T10:10:33.356Z",
               "EditorCaption": ""
@@ -144,8 +143,7 @@
               "RelativeToolTip": "FirstAPiApp\\Controllers\\EmployeeSerchController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:13:41.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T11:13:41.871Z"
             },
             {
               "$type": "Document",
@@ -193,8 +191,7 @@
               "RelativeToolTip": "FirstAPiApp\\Controllers\\DepartmentController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwA4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T10:35:59.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T10:35:59.992Z"
             },
             {
               "$type": "Document",
