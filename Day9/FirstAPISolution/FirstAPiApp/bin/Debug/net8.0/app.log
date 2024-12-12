@@ -1954,3 +1954,7 @@ FROM [Employees] AS [e]
 INFO  04:34:01 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
 FROM [Employees] AS [e]
+INFO  03:39:48 Now listening on: http://localhost:5131
+INFO  03:39:48 Application started. Press Ctrl+C to shut down.
+INFO  03:39:48 Hosting environment: Development
+INFO  03:39:48 Content root path: C:\Corp\Velveer\Participants\Day9\FirstAPISolution\FirstAPiApp

@@ -1,7 +1,18 @@
 
 <nav aria-label="breadcrumb-container">
     <ol class="breadcrumb breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">Home</li>
+      <li  *ngFor="let breadcrumb of breadcrumbs;let i =index"
+      class="breadcrumb-item active" 
+      [ngClass]="{'last-item':i===breadcrumbs.length-1}" 
+      aria-current="page">
+        <a *ngIf="i !== breadcrumbs.length-1;else last"
+        {click}="navigateTo(breadcrumb.url)">
+        {{breadcrumb.label}}
+      </a>
+      <ng-template #last>
+        <span>{{breadcrumb.label}}</span>
+      </ng-template>
+    </li>
     </ol>
   </nav>
   

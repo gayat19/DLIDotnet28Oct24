@@ -10,9 +10,10 @@ import { ProductService } from '../Services/product.service';
 import { LoginService } from '../Services/Login.service';
 import { DepartmentService } from '../Services/department.service';
 import { AuthInterceptor } from '../http-interceptors/auth-interceptor';
+import { SharedService } from '../Services/shared.service';
 
 export const appConfig: ApplicationConfig = {
-  providers: [DepartmentService, LoginService, EmployeeService, EmployeeCurdService,ProductService,
+  providers: [SharedService, DepartmentService, LoginService, EmployeeService, EmployeeCurdService,ProductService,
 
     provideZoneChangeDetection({ eventCoalescing: true }),
      provideRouter(routes), provideClientHydration(withEventReplay())

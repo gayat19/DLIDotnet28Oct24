@@ -4,6 +4,7 @@ import { CheckboxControlValueAccessor, FormsModule } from '@angular/forms';
 import { User } from '../models/user';
 import { LoginService } from '../../Services/Login.service';
 import { Router } from '@angular/router';
+import { SharedService } from '../../Services/shared.service';
 
 @Component({
   selector: 'app-login',
@@ -28,7 +29,8 @@ export class LoginComponent {
   {
     this.toasts = this.toasts.filter(t=>t.id != toast.id)
   }
-  constructor(private loginService:LoginService,private router:Router){
+  constructor(private sharedService:SharedService,
+    private loginService:LoginService,private router:Router){
 
   }
   login(un:any,pwd:any){
@@ -39,7 +41,8 @@ export class LoginComponent {
           next:(data:any)=>{
            // alert("Login success");
             this.showToast("Login success");
-           // this.router.navigate(['/department'])
+          this.sharedService.setUser(data.username);
+           this.router.navigate(['/department'])
             sessionStorage.setItem("token",data.token);
           },
           error:(err)=>{
