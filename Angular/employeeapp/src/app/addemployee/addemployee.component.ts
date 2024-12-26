@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { LifecycleComponent } from '../lifecycle/lifecycle.component';
 
 @Component({
   selector: 'app-addemployee',
-  imports: [FormsModule],
+  imports: [FormsModule,LifecycleComponent],
   templateUrl: './addemployee.component.html',
   styleUrl: './addemployee.component.css'
 })

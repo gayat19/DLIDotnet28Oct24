@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "GIxKm0RiQ3DE55PL/DeSNpGflODjF0hOAtlYx6X0J3k=",
+  "Hash": "qpHkpDC5eLkvzGcWsyw3jAanZdJOWOw5bJ0TFxWECvI=",
   "Source": "FirstAPiApp",
   "BasePath": "_content/FirstAPiApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

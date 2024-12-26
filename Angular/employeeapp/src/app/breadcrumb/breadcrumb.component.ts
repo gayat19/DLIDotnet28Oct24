@@ -23,7 +23,7 @@ export class BreadcrumbComponent {
       )
     ).subscribe((event:NavigationEnd)=>{
       this.setBreadcrumb(event.urlAfterRedirects)
-        console.log(event.urlAfterRedirects)
+       // console.log(event.urlAfterRedirects)
 
     });
     }

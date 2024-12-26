@@ -1,0 +1,33 @@
+<!-- <label>Select the employee type</label>
+<select (change)="selectType(etype.value)" #etype>
+    <option value="">Select</option>
+    <option value="permanent">Regular</option>
+    <option value="consultant">Consultant</option>
+</select>
+<div [ngSwitch]="empType">
+    <div *ngSwitchCase="'permanent'">
+        <app-permanentemp></app-permanentemp>
+    </div>
+    <div *ngSwitchCase="'consultant'">
+        <app-consultantemp></app-consultantemp>
+    </div>
+    <div *ngSwitchDefault>
+        <p>Please select the employee type</p>
+    </div>
+</div> -->
+CartNumber:
+<input appCardnumber type="text" />
+<label hColor="teal" appHeighlight>Employee Name</label>
+<select  (change)="selectChange(eid.value)" #eid>
+    <option value="0" >Select</option>
+    <option *ngFor="let emp of employees" [value]="emp.id">{{emp.name}}</option>
+</select>
+<input type="text" [(ngModel)]="changedName"/>
+<button class="btn btn-info" (click)="changeName()">Change Name</button>
+<div *ngFor="let emp of employees; trackBy: trackById">
+    Name: {{emp.name}}<br>
+    Age: {{emp.age}}<br>
+    email: {{emp.email}}<br>
+    <hr/>
+</div>
+

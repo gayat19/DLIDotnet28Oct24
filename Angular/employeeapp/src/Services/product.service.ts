@@ -9,5 +9,9 @@ export class ProductService{
     getProducts(){
         return this.http.get("https://dummyjson.com/products");
     }
+    getProductsById(id:number){
+        console.log('calling api with id '+id);
+        return this.http.get("https://dummyjson.com/products/"+id);
+    }
 
 }

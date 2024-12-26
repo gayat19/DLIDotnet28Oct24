@@ -1,0 +1,11 @@
+<p>parent works!</p>
+<a class="nav-link" [routerLink]="[{outlets:{seca:['child1']}}]">Child1</a>
+<a class="nav-link" [routerLink]="[{outlets:{secb:['child2']}}]">Child2</a>
+
+<div>
+    <router-outlet  name="seca"></router-outlet>
+</div>
+<hr>
+<div>
+    <router-outlet  name="secb"></router-outlet>
+</div>

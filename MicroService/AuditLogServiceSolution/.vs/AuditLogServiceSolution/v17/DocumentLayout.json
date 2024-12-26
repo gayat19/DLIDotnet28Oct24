@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|d:\\corp\\valveer\\participants\\microservice\\auditlogservicesolution\\auditlogserviceapi\\models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|solutionrelative:auditlogserviceapi\\models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|d:\\corp\\valveer\\participants\\microservice\\auditlogservicesolution\\auditlogserviceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|solutionrelative:auditlogserviceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Migrations\\20241224105926_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuditLogServiceAPI\\Migrations\\20241224105926_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|d:\\corp\\valveer\\participants\\microservice\\auditlogservicesolution\\auditlogserviceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|solutionrelative:auditlogserviceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|d:\\corp\\valveer\\participants\\microservice\\auditlogservicesolution\\auditlogserviceapi\\controllers\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|solutionrelative:auditlogserviceapi\\controllers\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|d:\\corp\\valveer\\participants\\microservice\\auditlogservicesolution\\auditlogserviceapi\\services\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|solutionrelative:auditlogserviceapi\\services\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|d:\\corp\\valveer\\participants\\microservice\\auditlogservicesolution\\auditlogserviceapi\\interfaces\\iauditservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|solutionrelative:auditlogserviceapi\\interfaces\\iauditservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|d:\\corp\\valveer\\participants\\microservice\\auditlogservicesolution\\auditlogserviceapi\\repositories\\auditlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|solutionrelative:auditlogserviceapi\\repositories\\auditlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|d:\\corp\\valveer\\participants\\microservice\\auditlogservicesolution\\auditlogserviceapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|solutionrelative:auditlogserviceapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|d:\\corp\\valveer\\participants\\microservice\\auditlogservicesolution\\auditlogserviceapi\\contexts\\logcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A055A6-D108-43F5-B8FC-991CBA6BDB28}|AuditLogServiceAPI\\AuditLogServiceAPI.csproj|solutionrelative:auditlogserviceapi\\contexts\\logcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuditController.cs",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Controllers\\AuditController.cs",
+              "RelativeDocumentMoniker": "AuditLogServiceAPI\\Controllers\\AuditController.cs",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Controllers\\AuditController.cs",
+              "RelativeToolTip": "AuditLogServiceAPI\\Controllers\\AuditController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwvxkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:56:55.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LogService.cs",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Services\\LogService.cs",
+              "RelativeDocumentMoniker": "AuditLogServiceAPI\\Services\\LogService.cs",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Services\\LogService.cs",
+              "RelativeToolTip": "AuditLogServiceAPI\\Services\\LogService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:53:39.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAuditService.cs",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Interfaces\\IAuditService.cs",
+              "RelativeDocumentMoniker": "AuditLogServiceAPI\\Interfaces\\IAuditService.cs",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Interfaces\\IAuditService.cs",
+              "RelativeToolTip": "AuditLogServiceAPI\\Interfaces\\IAuditService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:50:46.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuditLogRepository.cs",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Repositories\\AuditLogRepository.cs",
+              "RelativeDocumentMoniker": "AuditLogServiceAPI\\Repositories\\AuditLogRepository.cs",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Repositories\\AuditLogRepository.cs",
+              "RelativeToolTip": "AuditLogServiceAPI\\Repositories\\AuditLogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:46:44.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "AuditLogServiceAPI\\Interfaces\\IRepository.cs",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "AuditLogServiceAPI\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:45:37.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LogContext.cs",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Contexts\\LogContext.cs",
+              "RelativeDocumentMoniker": "AuditLogServiceAPI\\Contexts\\LogContext.cs",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Contexts\\LogContext.cs",
+              "RelativeToolTip": "AuditLogServiceAPI\\Contexts\\LogContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:45:04.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuditLog.cs",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Models\\AuditLog.cs",
+              "RelativeDocumentMoniker": "AuditLogServiceAPI\\Models\\AuditLog.cs",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Models\\AuditLog.cs",
+              "RelativeToolTip": "AuditLogServiceAPI\\Models\\AuditLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:43:35.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "AuditLogServiceAPI\\appsettings.json",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\appsettings.json",
+              "RelativeToolTip": "AuditLogServiceAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-24T10:41:54.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AuditLogServiceAPI\\Program.cs",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Program.cs",
+              "RelativeToolTip": "AuditLogServiceAPI\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:56:41.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20241224105926_init.cs",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Migrations\\20241224105926_init.cs",
+              "RelativeDocumentMoniker": "AuditLogServiceAPI\\Migrations\\20241224105926_init.cs",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\MicroService\\AuditLogServiceSolution\\AuditLogServiceAPI\\Migrations\\20241224105926_init.cs",
+              "RelativeToolTip": "AuditLogServiceAPI\\Migrations\\20241224105926_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:59:27.253Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
