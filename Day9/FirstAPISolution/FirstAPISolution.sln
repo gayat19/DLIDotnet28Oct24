@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstAPiApp", "FirstAPiApp\FirstAPiApp.csproj", "{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingAppTest", "ShoppingAppTest\ShoppingAppTest.csproj", "{60559DB1-5CB6-49C6-A574-12E6706356BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingAppTest", "ShoppingAppTest\ShoppingAppTest.csproj", "{60559DB1-5CB6-49C6-A574-12E6706356BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            let outerVariable = 10;
+            console.log("Outer variable ouside: " + outerVariable);
+            function outerFunction() {
+               //let outerVariable = 100
+               console.log("Outer function called");
+               console.log("Outer variable inside: " + outerVariable);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <button onclick="outerFunction()">Outer Function</button>
+    </body>
+</html>

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|d:\\corp\\valveer\\participants\\day9\\firstapisolution\\firstapiapp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|d:\\corp\\valveer\\participants\\day9\\firstapisolution\\firstapiapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{D1C3AF96-FD8C-423A-AD66-9D0C0309278A}|FirstAPiApp\\FirstAPiApp.csproj|solutionrelative:firstapiapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -78,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +94,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Dockerfile",
+              "RelativeDocumentMoniker": "FirstAPiApp\\Dockerfile",
+              "ToolTip": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Dockerfile",
+              "RelativeToolTip": "FirstAPiApp\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-27T11:15:18.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\DTOs\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Models\\DTOs\\LoginRequestDTO.cs",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "LoginService.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\LoginService.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Services\\LoginService.cs",
@@ -114,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Program.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Program.cs",
@@ -122,12 +139,11 @@
               "RelativeToolTip": "FirstAPiApp\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T10:10:33.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T10:10:33.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Controllers\\EmployeeController.cs",
@@ -139,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EmployeeSerchController.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\EmployeeSerchController.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Controllers\\EmployeeSerchController.cs",
@@ -151,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "EmployeeGetPayloadDTO.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\DTOs\\EmployeeGetPayloadDTO.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Models\\DTOs\\EmployeeGetPayloadDTO.cs",
@@ -163,20 +179,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\appsettings.json",
               "RelativeDocumentMoniker": "FirstAPiApp\\appsettings.json",
               "ToolTip": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\appsettings.json",
               "RelativeToolTip": "FirstAPiApp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-26T10:17:44.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T10:17:44.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Controllers\\UserController.cs",
@@ -188,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Controllers\\DepartmentController.cs",
@@ -200,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\User.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Models\\User.cs",
@@ -212,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\EmployeeService.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Services\\EmployeeService.cs",
@@ -224,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UsernameValidator.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Misc\\UsernameValidator.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Misc\\UsernameValidator.cs",
@@ -236,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Models\\Employee.cs",
@@ -248,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Repositories\\EmployeeRepository.cs",
@@ -260,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CustomExceptionFilter.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Misc\\CustomExceptionFilter.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Misc\\CustomExceptionFilter.cs",
@@ -272,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "HRContext.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Contexts\\HRContext.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Contexts\\HRContext.cs",
@@ -284,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\Corp\\Valveer\\Participants\\Day9\\FirstAPISolution\\FirstAPiApp\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "FirstAPiApp\\Services\\TokenService.cs",

@@ -2128,3 +2128,13 @@ INFO  04:00:36 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int3
 SELECT TOP(2) [u].[Id], [u].[HashKey], [u].[Password], [u].[Role], [u].[Username]
 FROM [Users] AS [u]
 WHERE [u].[Id] = @__key_0
+INFO  04:11:52 Now listening on: http://localhost:5131
+INFO  04:11:53 Application started. Press Ctrl+C to shut down.
+INFO  04:11:53 Hosting environment: Development
+INFO  04:11:53 Content root path: D:\Corp\Valveer\Participants\Day9\FirstAPISolution\FirstAPiApp
+INFO  04:13:50 Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+INFO  04:13:50 Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[Email], [e].[Name]
+FROM [Employees] AS [e]

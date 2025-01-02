@@ -1,0 +1,20 @@
+Rate Limiting
+1) Requests per min/sec
+2) Leaky Bucket Algo - Even if there is a burst allowing only steady flow
+3) Token bucket -> Uses token for burst 
+
+429 - Too many request
+
+Performance Profiler
+Memory Usage
+----------------------------------------------------------
+Docker - Containerization
+
+Developing and shipping an application
+Container -> application
+Images -> readonly template for creating containers
+Docker Engine
+Dockerfile
+
+
+
